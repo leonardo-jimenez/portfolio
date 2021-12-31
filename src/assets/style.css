@@ -1,0 +1,72 @@
+:root {
+    --text-size-2xl: 3.75rem;
+    --text-size-xl: 3rem;
+    --text-size-lg: 2rem;
+    --text-size-base: 1.5rem;
+    --text-size-sm: 1rem;
+    
+    --text-line-height-2xl: 4.5rem;
+    --text-line-height-base: 1.75rem;
+    --text-line-height-sm: 1.2rem;
+
+    
+    --button-padding-x: 2rem;
+    --button-padding-y: 1.5rem;
+
+    --color-white: #FFFFFF;
+    --color-dark-blue: #1A2760;
+    --color-gray: #858585;
+    --color-light-gray: #C4C4C4;
+}
+
+
+h1 {
+    font-size: var(--text-size-2xl);
+    line-height: var(--text-line-height-2xl);  
+}
+h2 {
+    font-size: var(--text-size-xl);
+}
+h3 {
+    font-size: var(--text-size-lg);
+}
+h4 {
+    font-size: var(--text-size-base);
+}
+h5 {
+    font-size: var(--text-size-sm);
+    line-height: var(--text-line-height-sm);  
+}
+p {
+    font-size: var(--text-size-base);
+}
+hr {
+    color: var(--color-light-gray);
+}
+button {
+    padding: var(--button-padding-y) var(--button-padding-x);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    font-size: var(--text-size-base);
+    line-height: var(--text-line-height-base);
+    text-transform: uppercase;
+}
+
+.divisor {
+    width: 2px;
+    height: 2rem;
+    background-color: var(--color-dark-blue);
+}
+
+.header h4,
+.header h5,
+.header p {
+    color: var(--color-dark-blue);
+}
+
+.txt-gray{
+    color: var(--color-gray);
+}
+.txt-dk-blue{
+    color: var(--color-dark-blue);
+}
