@@ -7,7 +7,6 @@
             <img src="/src/assets/images/python-sf.png" alt="Python Software Fundation">
             <img src="/src/assets/images/stage-rights.png" alt="Stage Rights">
             <img src="/src/assets/images/read-the-docs.png" alt="Read The Docs">
-            
         </div>
     </div>
 </template>
