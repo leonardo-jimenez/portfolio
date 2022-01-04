@@ -6,7 +6,7 @@
         </template>
         <template v-slot:title>Cancercare</template>
         <template v-slot:description>
-            Redesigning the digital<br>
+            Redesigning the digital
             experience for cancer patients
         </template>
         <template v-slot:side-image>
@@ -20,3 +20,11 @@ export default {
     components: { StudyCase }
 }
 </script>
+<style scoped>
+.cancercare-bg {
+    background: linear-gradient(
+        263.91deg, 
+        var(--color-sky-blue) 17.54%, 
+        var(--color-night-blue) 102.23%);
+}
+</style>

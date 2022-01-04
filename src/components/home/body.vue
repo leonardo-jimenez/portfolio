@@ -3,7 +3,6 @@
     <solutions></solutions>
 
     <kahkow></kahkow>
-
     <!-- DAISY POLANCO TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>
@@ -20,7 +19,6 @@
     </testimonial>
 
     <alpha-express></alpha-express>
-
     <!-- JOSE RAFAEL TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>
@@ -38,7 +36,6 @@
     </testimonial>
 
     <cancercare></cancercare>
-
     <!-- SARA COEN TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>

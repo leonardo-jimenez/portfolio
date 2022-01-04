@@ -6,7 +6,7 @@
         </template>
         <template v-slot:title>KahKow</template>
         <template v-slot:description>
-            Designing premium chocolate<br>
+            Designing premium chocolate
             shopping for the new normal
         </template>
         <template v-slot:side-image>
@@ -20,3 +20,11 @@ export default {
     components: { StudyCase }
 }
 </script>
+<style scoped>
+.kahkow-bg {
+    background: linear-gradient(
+        263.91deg, 
+        var(--color-cream) 17.54%, 
+        var(--color-chocolate) 102.23%);
+}
+</style>

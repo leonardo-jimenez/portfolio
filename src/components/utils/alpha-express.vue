@@ -6,7 +6,7 @@
         </template>
         <template v-slot:title>Alpha Express</template>
         <template v-slot:description>
-            Building the future of wealth<br>
+            Building the future of wealth
             management and finances in the DR
         </template>
         <template v-slot:side-image>
@@ -20,3 +20,11 @@ export default {
     components: { StudyCase }
 }
 </script>
+<style scoped>
+.alpha-express-bg {
+    background: linear-gradient(
+        263.91deg, 
+        var(--color-ocean-blue) 17.54%, 
+        var(--color-deep-blue) 102.23%);
+}
+</style>

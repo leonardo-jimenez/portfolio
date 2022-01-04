@@ -1,12 +1,12 @@
 <template>
     <div class="container mx-auto">
-        <div class="w-1/2 pt-28 pb-16">
-            <h1 class="font-medium mb-5 txt-dk-blue">
+        <div class="description">
+            <h1 class="w-max font-medium txt-dk-blue">
                 I use design to <mark>solve</mark><br>
                 business problems.<br>
                 I can solve <mark>yours</mark>.
             </h1>
-            <p class="text-lg mb-5 txt-gray">
+            <p class="txt-gray">
                 I’m a multidisciplinary designer with a background in industrial
                 and software engineering. I use those disciplines alongside UX
                 design to craft digital products that strike a balance between user
@@ -18,3 +18,62 @@
         </div>
     </div>
 </template>
+<style scoped>
+.description {
+    padding-top: 3.75rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+.description h1 {
+    margin-bottom: var(--global-spacing-sm);
+}
+.description p {
+    font-size: var(--text-size-xs);
+    line-height: var(--text-line-height-xs);
+    margin-bottom: var(--global-spacing-base);    
+}
+.description button {
+    padding: var(--button-padding-y-sm) var(--button-padding-x-sm);
+    line-height: var(--text-line-height-sm);
+    font-size: var(--text-size-sm);
+}
+
+
+@media (min-width: 428px) {
+    .description {
+        width: min-content;
+    }
+}
+
+@media (min-width: 640px) {
+    .description h1 {
+        margin-bottom: var(--global-spacing-base);
+    }
+    .description p {
+        font-size: var(--text-size-sm);
+        line-height: var(--text-line-height-sm);
+        margin-bottom: var(--global-spacing-md);
+    }
+    .description button {
+        padding: var(--button-padding-y-base) var(--button-padding-x-base);
+        line-height: var(--text-line-height-base);
+        font-size: var(--text-size-base);
+    }
+}
+
+@media (min-width: 1024px) {
+    .description {
+        padding-top: 6.75rem;
+        padding-bottom: 4.25rem;
+    }
+    .description h1 {
+        margin-bottom: var(--global-spacing-md);
+    }
+    .description p {
+        font-size: var(--text-size-lsm);
+        line-height: var(--text-line-height-lsm);
+        margin-bottom: var(--global-spacing-lg);
+    }
+}
+
+</style>
