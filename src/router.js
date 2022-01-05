@@ -8,7 +8,17 @@ const routes = [
     {
         path: "/kahkow/",
         component: () => import('./components/kahkow/body.vue')
-    }
+    },
+    {
+        path: "/cancercare/",
+        component: () => import('./components/cancercare/body.vue')
+    },
+    {
+        path: "/alpha-express/",
+        component: () => import('./components/alpha-express/body.vue')
+    },
+
+
 
 ]
 

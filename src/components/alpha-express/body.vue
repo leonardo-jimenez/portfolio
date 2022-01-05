@@ -1,14 +1,11 @@
 <template>
-    <description></description>
     <page-footer></page-footer>
 </template>
 <script>
-import Description from './description.vue'
 import PageFooter from './footer.vue'
 
 export default {
     components: {
-        Description,
         PageFooter
         
     }

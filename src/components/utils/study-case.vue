@@ -4,11 +4,12 @@
         <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
             <div class="study-case flex justify-between items-center grid">
                 <div class="content">
+                    <p v-show="nextCaseLabel" class="next">Next case</p>
                     <h2 class="font-semibold">
                         <slot name="title"></slot>
                     </h2>
                     <p><slot name="description"></slot></p>
-                    <button class="font-medium whitespace-nowrap">
+                    <button class="font-medium whitespace-nowrap" @click="goToNextCase()">
                         See case study
                     </button>
                 </div>
@@ -20,7 +21,31 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    props: {
+        nextCaseLabel: {
+            type: Boolean,
+            default: false
+        },
+        nextCaseHref: {
+            type: String,
+            required: true
+        }
+    },
+    methods: {
+        goToNextCase() {
+            console.log(this.nextCaseHref)
+            this.$router.push({path: this.nextCaseHref})
+        }
+    }
+}
+</script>
 <style scoped>
+.study-case .next  {
+    text-transform: uppercase;
+    margin-bottom: var(--global-spacing-sm);
+}
 .study-case {
     padding-left: var(--global-spacing-xl);
     padding-right: var(--global-spacing-xl);

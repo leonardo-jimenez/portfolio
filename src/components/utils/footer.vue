@@ -1,13 +1,12 @@
 <template>
-    <div class="footer-bg footer p-block">
+    <div class="footer-bg footer">
         <div id="block" class="container mx-auto">
             <h1 class="mb-8 font-medium">
-                Do you want a proactive<br>
-                designer in your Team?
+                <slot name="title"></slot>
             </h1>
             <div class="schedule">
                 <a href="https://calendly.com/leonardo-a-jimenez/45min">
-                    <button class="capitalize px-4 py-3 text-xl leading-6 whitespace-nowrap">
+                    <button class="normal-case px-4 py-3 text-xl leading-6 whitespace-nowrap">
                         Let’s get started!
                     </button>
                 </a>

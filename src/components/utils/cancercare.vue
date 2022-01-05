@@ -1,6 +1,6 @@
 <template>
     <!-- CANCERCARE STUDY CASE -->
-    <study-case class="cancercare-bg">
+    <study-case class="cancercare-bg" nextCaseHref="/cancercare">
         <template v-slot:background>
             <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/cancercare-bg.png">
         </template>

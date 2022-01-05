@@ -1,6 +1,6 @@
 <template>
     <!-- ALPHA EXPRESS STUDY CASE -->
-    <study-case class="alpha-express-bg">
+    <study-case class="alpha-express-bg" nextCaseHref="/alpha-express">
         <template v-slot:background>
             <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/alpha-express-bg.png">
         </template>

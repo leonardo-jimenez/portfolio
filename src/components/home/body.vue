@@ -36,6 +36,7 @@
     </testimonial>
 
     <cancercare></cancercare>
+    
     <!-- SARA COEN TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>
@@ -50,7 +51,7 @@
         </template>
     </testimonial>
 
-    <slot name="footer"></slot>
+    <page-footer></page-footer>
 </template>
 
 <script>
@@ -60,6 +61,7 @@ import Testimonial from './testimonial.vue'
 import Kahkow from '../utils/kahkow.vue'
 import AlphaExpress from '../utils/alpha-express.vue'
 import Cancercare from '../utils/cancercare.vue'
+import PageFooter from './footer.vue'
 
 export default {
     components: {
@@ -68,7 +70,8 @@ export default {
         Testimonial,
         Kahkow,
         AlphaExpress,
-        Cancercare
+        Cancercare,
+        PageFooter
     }
 }
 </script>

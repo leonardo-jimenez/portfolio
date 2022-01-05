@@ -1,6 +1,6 @@
 <template>
     <!-- KAWKOW STUDY CASE -->
-    <study-case class="kahkow-bg">
+    <study-case class="kahkow-bg" nextCaseHref="/kahkow">
         <template v-slot:background>
             <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/kahkow-bg.png">
         </template>
