@@ -2,7 +2,7 @@
     <!-- CANCERCARE STUDY CASE -->
     <study-case class="cancercare-bg">
         <template v-slot:background>
-            <img class="w-full h-full object-cover absolute" src="/src/assets/images/cancercare-bg.png">
+            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/cancercare-bg.png">
         </template>
         <template v-slot:title>Cancercare</template>
         <template v-slot:description>
@@ -10,7 +10,7 @@
             experience for cancer patients
         </template>
         <template v-slot:side-image>
-            <img src="/src/assets/images/cancercare-pg-rep.png" alt="Cancercare Page Presentation">
+            <img src="/src/assets/images/utils/cancercare-pg-rep.png" alt="Cancercare Page Presentation">
         </template>
     </study-case>
 </template>

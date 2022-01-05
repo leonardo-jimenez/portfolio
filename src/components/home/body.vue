@@ -6,7 +6,7 @@
     <!-- DAISY POLANCO TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>
-            <img width="80" height="80" src="/src/assets/images/daisy-polanco.png" alt="Daisy Polanco, Projects Coordinator, Kah Kow">
+            <img width="80" height="80" src="/src/assets/images/utils/daisy-polanco.png" alt="Daisy Polanco, Projects Coordinator, Kah Kow">
         </template>
         <template v-slot:content>
             “Something I really enjoyed about working with Leo is the guidance during
@@ -22,7 +22,7 @@
     <!-- JOSE RAFAEL TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>
-            <img width="80" height="80" src="/src/assets/images/jose-rafael.png" alt="Jose Rafael de la cruz, UX LEAD, Universal Insurance">
+            <img width="80" height="80" src="/src/assets/images/utils/jose-rafael.png" alt="Jose Rafael de la cruz, UX LEAD, Universal Insurance">
         </template>
         <template v-slot:content>
             “Everytime I have worked with Leonardo I see that he not only focus
@@ -39,7 +39,7 @@
     <!-- SARA COEN TESTIMONIAL -->
     <testimonial>
         <template v-slot:portrait>
-            <img width="80" height="80" src="/src/assets/images/sara-coen.png" alt="Sarah Coen, Senior Partner Coen & papagikos">
+            <img width="80" height="80" src="/src/assets/images/utils/sara-coen.png" alt="Sarah Coen, Senior Partner Coen & papagikos">
         </template>
         <template v-slot:content>
             “We didn’t expect the amount of quality that was placed in the design

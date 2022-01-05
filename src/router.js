@@ -4,7 +4,12 @@ const routes = [
     {
         path: "/",
         component: () => import('./components/home/body.vue')
+    },
+    {
+        path: "/kahkow/",
+        component: () => import('./components/kahkow/body.vue')
     }
+
 ]
 
 const router = createRouter({

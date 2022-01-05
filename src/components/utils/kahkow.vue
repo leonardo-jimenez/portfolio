@@ -2,7 +2,7 @@
     <!-- KAWKOW STUDY CASE -->
     <study-case class="kahkow-bg">
         <template v-slot:background>
-            <img class="w-full h-full object-cover absolute" src="/src/assets/images/kahkow-bg.png">
+            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/kahkow-bg.png">
         </template>
         <template v-slot:title>KahKow</template>
         <template v-slot:description>
@@ -10,7 +10,7 @@
             shopping for the new normal
         </template>
         <template v-slot:side-image>
-            <img src="/src/assets/images/kahkow-pg-rep.png" alt="Kawkow Page Presentation">
+            <img src="/src/assets/images/utils/kahkow-pg-rep.png" alt="Kawkow Page Presentation">
         </template>
     </study-case>
 </template>

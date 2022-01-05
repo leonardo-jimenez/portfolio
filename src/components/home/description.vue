@@ -27,11 +27,6 @@
 .description h1 {
     margin-bottom: var(--global-spacing-sm);
 }
-.description p {
-    font-size: var(--text-size-xs);
-    line-height: var(--text-line-height-xs);
-    margin-bottom: var(--global-spacing-base);    
-}
 .description button {
     padding: var(--button-padding-y-sm) var(--button-padding-x-sm);
     line-height: var(--text-line-height-sm);
@@ -50,8 +45,6 @@
         margin-bottom: var(--global-spacing-base);
     }
     .description p {
-        font-size: var(--text-size-sm);
-        line-height: var(--text-line-height-sm);
         margin-bottom: var(--global-spacing-md);
     }
     .description button {
@@ -68,11 +61,6 @@
     }
     .description h1 {
         margin-bottom: var(--global-spacing-md);
-    }
-    .description p {
-        font-size: var(--text-size-lsm);
-        line-height: var(--text-line-height-lsm);
-        margin-bottom: var(--global-spacing-lg);
     }
 }
 
