@@ -38,6 +38,7 @@ export default {
 <style scoped>
 .kahkow {
     height: 100%;
+    max-height: 50rem;
 }
 .kahkow span{
     color: var(--color-gold);
@@ -48,20 +49,21 @@ export default {
 }
 
 @media (min-width: 640px) {
+    .kahkow .image {
+        top: 0rem;
+        display: grid;
+        position: absolute;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-top: var(--global-spacing-2xl);
+    }
     .kahkow .image img {
+        width: min(max(45%, 20rem), calc(50 * var(--global-spacing-base)));
         margin-left: auto;
     }
 }
 @media (min-width: 1024px) {
     .kahkow .image {
-        top: 0;
-        display: grid;
-        position: absolute;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
         padding-top: calc(5 * var(--global-spacing-base));
-    }
-    .kahkow .image img {
-        width: min(50%, calc(45 * var(--global-spacing-base)));
     }
 }
 </style>

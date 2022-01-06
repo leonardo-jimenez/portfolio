@@ -47,14 +47,14 @@
     .description p {
         margin-bottom: var(--global-spacing-md);
     }
+}
+
+@media (min-width: 1024px) {
     .description button {
         padding: var(--button-padding-y-base) var(--button-padding-x-base);
         line-height: var(--text-line-height-base);
         font-size: var(--text-size-base);
     }
-}
-
-@media (min-width: 1024px) {
     .description {
         padding-top: 6.75rem;
         padding-bottom: 4.25rem;
