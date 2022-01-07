@@ -1,7 +1,7 @@
 <template>
     <div class="w-full relative the-challenge">
         <img class="dots transform -translate-y-1/2" src="/src/assets/images/kahkow/yellow-dots.png">
-        <div id="block" class="container mx-auto">
+        <div id="block" class="container fit mx-auto">
             <text-block>
                 <template v-slot:title>The challenge</template>
                 <template v-slot:description>

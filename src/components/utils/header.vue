@@ -1,8 +1,8 @@
 <template>
     <div class="container mx-auto flex justify-between items-center header">
-        <div>
+        <router-link to="/">
             <h4><b>leonardo</b>jimenez</h4>
-        </div>
+        </router-link>
         <div class="w-full hide-mobile">
             <div class="justify-end flex items-center gap-8">
                 <p class="text-xl">Work</p>
