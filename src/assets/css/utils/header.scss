@@ -1,0 +1,14 @@
+.header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    & h4, & h4 b, & h5, & p { color: $color-dark-blue; }
+    & h4 { font-size: $text-size-sm; }
+    & .hide-mobile { display: none; }
+    & .only-mobile { display: block; }
+    
+    @media (min-width: $media-tablet-width) {  
+        & .hide-mobile { display: block; }  
+        & .only-mobile { display: none; }
+    }
+}

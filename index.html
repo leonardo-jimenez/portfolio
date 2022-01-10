@@ -1,16 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-        <link rel="preload" href="/src/assets/fonts.css" as="style">
-        <link rel="stylesheet" href="/src/assets/fonts.css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leo's portfolio</title>
+
+        <link rel="preload" href="/src/assets/css/fonts.css" as="style">
+        <link rel="stylesheet" href="/src/assets/css/fonts.css">
+        <link rel="stylesheet" href="/src/assets/tailwind.css">
+        <link rel="stylesheet" href="/src/assets/css/home/style.scss">
     </head>
     <body>
-        <div id="app"></div>
-        <script type="module" src="/src/main.js"></script>
+        <!-- HEADER -->
+        <div class="container mx-auto flex justify-between items-center header">
+            <a href="/"><h4><b>leonardo</b>jimenez</h4></a>
+            <div class="w-full hide-mobile">
+                <div class="justify-end flex items-center gap-8">
+                    <p class="text-xl">Work</p>
+                    <p class="text-xl">About</p>
+                    <div class="divisor"></div>
+                    <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.png" alt="Leonardo Jimenez">
+                    </div>
+                    <h5>Schedule a<br>call with me</h5>
+                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                        <button class="capitalize px-4 py-3 text-xl leading-6">
+                            Let’s get started!
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <img class="only-mobile" src="/src/assets/images/icons/menu.svg">
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="container mx-auto">
+            <div class="description">
+                <h1 class="w-max font-medium txt-dk-blue">
+                    I use design to <mark>solve</mark><br>
+                    business problems.<br>
+                    I can solve <mark>yours</mark>.
+                </h1>
+                <p class="txt-gray">
+                    I’m a multidisciplinary designer with a background in industrial
+                    and software engineering. I use those disciplines alongside UX
+                    design to craft digital products that strike a balance between user
+                    delight and business goals.
+                </p>
+                <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                    <button>Let's work together!</button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- SOLUTIONS -->
+        <hr>
+        <div class="container mx-auto flex flex-col justify-between solutions">
+            <h4 class="txt-dk-blue">I HAVE DESIGNED SOLUTIONS FOR...</h4>
+            <div class="grid grid-cols-4 items-center justify-items-center gap-5">
+                <img src="/src/assets/images/utils/nav-canada.png" alt="Nav Canada">
+                <img src="/src/assets/images/utils/python-sf.png" alt="Python Software Fundation">
+                <img src="/src/assets/images/utils/stage-rights.png" alt="Stage Rights">
+                <img src="/src/assets/images/utils/read-the-docs.png" alt="Read The Docs">
+            </div>
+        </div>
+
+        <!-- KAHKOW -->
+        <div class="kahkow-bg relative overflow-hidden">
+            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/kahkow-bg.png">
+            <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
+                <div class="study-case flex justify-between items-center grid">
+                    <div class="content">
+                        <h2 class="font-semibold">
+                            KahKow
+                        </h2>
+                        <p>
+                            Designing premium chocolate
+                            shopping for the new normal
+                        </p>
+                        <a href="/src/pages/kahkow.html">
+                            <button class="font-medium whitespace-nowrap">
+                                See case study
+                            </button>
+                        </a>
+                    </div>
+                    <div class="side-image">
+                        <img src="/src/assets/images/utils/kahkow-pg-rep.png" alt="Kawkow Page Presentation">    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAISY POLANCO TESTIMONIAL -->
+        <div id="block" class="container mx-auto testimonial">
+            <div class="portrait rounded-full bg-gray-300 overflow-hidden">
+                <img width="80" height="80" src="/src/assets/images/utils/daisy-polanco.png" alt="Daisy Polanco, Projects Coordinator, Kah Kow">
+            </div>
+            <p class="mb-6">
+                “Something I really enjoyed about working with Leo is the guidance during
+                the whole process. The sharing of your methodology with the supervisors was
+                a game-changer for us.”
+            </p>
+            <h5>Daisy Polanco, Projects Coordinator, Kah Kow</h5>
+        </div>
+
+        <!-- CANCERCARE -->
+        <div class="cancercare-bg relative overflow-hidden">
+            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/cancercare-bg.png">
+            <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
+                <div class="study-case flex justify-between items-center grid">
+                    <div class="content">
+                        <h2 class="font-semibold">
+                            Cancercare
+                        </h2>
+                        <p>
+                            Redesigning the digital
+                            experience for cancer patients
+                        </p>
+                        <a href="/src/pages/cancercare.html">
+                            <button class="font-medium whitespace-nowrap">
+                                See case study
+                            </button>
+                        </a>
+                    </div>
+                    <div class="side-image">
+                        <img src="/src/assets/images/utils/cancercare-pg-rep.png" alt="Cancercare Page Presentation">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JOSE RAFAEL TESTIMONIAL -->
+        <div id="block" class="container mx-auto testimonial">
+            <div class="portrait rounded-full bg-gray-300 overflow-hidden">
+                <img width="80" height="80" src="/src/assets/images/utils/jose-rafael.png" alt="Jose Rafael de la cruz, UX LEAD, Universal Insurance">
+            </div>
+            <p class="mb-6">
+                “Everytime I have worked with Leonardo I see that he not only focus
+                on the look and feel of things but in the function. The ability to
+                balance the users with the business side of things is rare in the wild.
+                He has it”
+            </p>
+            <h5>Jose Rafael de la cruz, UX LEAD, Universal Insurance</h5>
+        </div>
+        
+        
+        <!-- ALPHA EXPRESS -->
+        <div class="alpha-express-bg relative overflow-hidden">
+            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/alpha-express-bg.png">
+            <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
+                <div class="study-case flex justify-between items-center grid">
+                    <div class="content">
+                        <h2 class="font-semibold">
+                            Alpha Express
+                        </h2>
+                        <p>
+                            Building the future of wealth
+                            management and finances in the DR
+                        </p>
+                        <a href="/src/pages/alpha-express.html">
+                            <button class="font-medium whitespace-nowrap">
+                                See case study
+                            </button>
+                        </a>
+                    </div>
+                    <div class="side-image">
+                        <img src="/src/assets/images/utils/alpha-express-pg-rep.png" alt="Cancercare Page Presentation">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SARA COEN TESTIMONIAL -->
+        <div id="block" class="container mx-auto testimonial">
+            <div class="portrait rounded-full bg-gray-300 overflow-hidden">
+                <img width="80" height="80" src="/src/assets/images/utils/sara-coen.png" alt="Sarah Coen, Senior Partner Coen & papagikos">
+            </div>
+            <p class="mb-6">
+                “We didn’t expect the amount of quality that was placed in the design
+                of our identity and the guidance through the process.”
+            </p>
+            <h5>Sarah Coen, Senior Partner Coen & papagikos</h5>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-bg footer">
+            <div id="block" class="container mx-auto">
+                <h1 class="mb-8 font-medium">
+                    Do you want a proactive<br>
+                    designer in your Team?
+                </h1>
+                <div class="schedule">
+                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                        <button class="normal-case px-4 py-3 text-xl leading-6 whitespace-nowrap">
+                            Let’s get started!
+                        </button>
+                    </a>
+                    <div class="portrait rounded-full bg-gray-300 overflow-hidden">
+                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.png" alt="Leonardo Jimenez">
+                    </div>
+                    <h5>Schedule a<br>call with me</h5>
+                </div>
+            </div>
+        </div>
+        <script src="/main.js"></script>
     </body>
 </html>

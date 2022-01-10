@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kahkow study case</title>
+
+        <link rel="preload" href="/src/assets/css/fonts.css" as="style">
+        <link rel="stylesheet" href="/src/assets/css/fonts.css">
+        <link rel="stylesheet" href="/src/assets/tailwind.css">
+        <link rel="stylesheet" href="/src/assets/css/home/style.scss">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="container mx-auto flex justify-between items-center header">
+            <a href="/"><h4><b>leonardo</b>jimenez</h4></a>
+            <div class="w-full hide-mobile">
+                <div class="justify-end flex items-center gap-8">
+                    <p class="text-xl">Work</p>
+                    <p class="text-xl">About</p>
+                    <div class="divisor"></div>
+                    <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.png" alt="Leonardo Jimenez">
+                    </div>
+                    <h5>Schedule a<br>call with me</h5>
+                    <button class="capitalize px-4 py-3 text-xl leading-6" onclick="toPage('https://calendly.com/leonardo-a-jimenez/45min')">
+                        Let’s get started!
+                    </button>
+                </div>
+            </div>
+            <img class="only-mobile" src="/src/assets/images/icons/menu.svg">
+        </div>
+
+        <!-- FOOTER -->
+        <div class="cancercare-footer footer-bg footer">
+            <div id="block" class="container mx-auto">
+                <h1 class="mb-8 font-medium">
+                    There’s a lot more I can do<br>
+                    for you. Let’s talk
+                </h1>
+                <div class="schedule">
+                    <button class="normal-case px-4 py-3 text-xl leading-6 whitespace-nowrap" onclick="toPage('https://calendly.com/leonardo-a-jimenez/45min')">
+                        Let’s get started!
+                    </button>
+                    <div class="portrait rounded-full bg-gray-300 overflow-hidden">
+                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.png" alt="Leonardo Jimenez">
+                    </div>
+                    <h5>Schedule a<br>call with me</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ALPHA EXPRESS -->
+        <div class="alpha-express-bg relative overflow-hidden">
+            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/alpha-express-bg.png">
+            <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
+                <div class="study-case flex justify-between items-center grid">
+                    <div class="content">
+                        <p class="next">Next case</p>
+                        <h2 class="font-semibold">
+                            Alpha Express
+                        </h2>
+                        <p>
+                            Building the future of wealth
+                            management and finances in the DR
+                        </p>
+                        <button class="font-medium whitespace-nowrap" onclick="toPage('/src/pages/alpha-express.html')">
+                            See case study
+                        </button>
+                    </div>
+                    <div class="side-image">
+                        <img src="/src/assets/images/utils/alpha-express-pg-rep.png" alt="Cancercare Page Presentation">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/main.js"></script>
+    </body>
+</html>
