@@ -1,0 +1,20 @@
+.header.kahkow-header {
+  h4, p, h5 {
+    color: $color-black;
+    b {
+      color: inherit;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button, .divisor {
+    background-color: $color-black;
+  }
+
+  img.only-mobile {
+    filter: invert(12%) sepia(1%) saturate(8%) hue-rotate(316deg) brightness(107%) contrast(102%);
+  }
+}
