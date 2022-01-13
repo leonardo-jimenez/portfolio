@@ -1,26 +1,15 @@
 .categories-taxonomy {
   //background-color: ;
   .centric-container {
-    p {
-      color: #6A3704;
-      line-height: 16px;
-      font-size: 10px;
-    }
-
-    ul {
-      font-size: 6px;
-      li {
-        color: #686B77;
-      }
-    }
 
     .centric-block {
       background: #F5F5F5;
       box-shadow: 12px 12px 23px rgba(0, 0, 0, 0.08);
     }
   }
-}
 
-body {
+  .gradient-background {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.74%, #FFFFFF 61.79%);
+  }
 
 }
