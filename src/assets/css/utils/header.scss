@@ -6,6 +6,88 @@
     & h4 { font-size: $text-size-sm; }
     & .hide-mobile { display: none; }
     & .only-mobile { display: block; }
+
+    .nav-drop-down-container:hover {
+
+        .drop-down-title {
+            font-weight: 600;
+        }
+
+         .arrow-container {
+             display: block;
+         }
+    }
+
+    .about-container:focus, .about-container:focus-within {
+        .arrow-container {
+            display: block;
+        }
+    }
+
+    .arrow-wrapper {
+        &:after {
+            content: '';
+            display: block;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            border-top: 12px solid #084E8A;
+            filter: drop-shadow(6px 0px 13px rgba(0, 0, 0, 0.07));
+            top: 9px;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .arrow-container:hover {
+        display: block;
+    }
+
+    .arrow-container {
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: white;
+            width: 100%;
+            height: 50px;
+            z-index: 1;
+        }
+
+        .nav-bar-arrow {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-right: 24px solid transparent;
+            border-left: 24px solid transparent;
+            border-bottom: 42px solid white;
+            filter: drop-shadow(6px 0px 13px rgba(0, 0, 0, 0.07));
+            top: 35px;
+        }
+    }
+
+    .work-dropdown {
+
+        box-shadow: 6px 7px 23px rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+
+
+        .project-title {
+            color: $color-tourcoise;
+            
+            i {
+                color: inherit;
+            }
+
+        }
+
+        .project-subtitle {
+         color: $color-smooth-gray;   
+        }
+    }
     
     @media (min-width: $media-tablet-width) {  
         & .hide-mobile { display: block; }  

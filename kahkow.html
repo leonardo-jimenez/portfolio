@@ -14,28 +14,78 @@
 
 <body>
     <!-- HEADER -->
-    <div class="container mx-auto flex justify-between items-center header kahkow-header">
-        <a href="/">
-            <h4><b>leonardo</b>jimenez</h4>
-        </a>
-        <div class="w-full hide-mobile">
-            <div class="justify-end flex items-center gap-8">
-                <p class="text-xl underline-on-hover">Work</p>
-                <p class="text-xl underline-on-hover">About</p>
-                <div class="divisor"></div>
-                <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
-                    <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
-                        alt="Leonardo Jimenez">
+    <div class="sticky top-0 z-50 bg-white border-b-2">
+        <div class="container mx-auto flex justify-between items-center header kahkow-header">
+            <a href="/">
+                <h4><b>leonardo</b>jimenez</h4>
+            </a>
+            <div class="w-full hide-mobile">
+                <div class="justify-end flex items-center gap-8">
+                    <div class="relative nav-drop-down-container">
+                        <div class="arrow-container absolute z-10 hidden left-2/4 -translate-x-1/2 pt-14">
+                            <div class="nav-bar-arrow"></div>
+                            <div class="px-6 py-8 work-dropdown w-max bg-white">
+                                <a href="kahkow.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
+                                    <div class="w-10 h-10"><img class="w-full h-full object-contain"
+                                            src="/src/assets/images/utils/kahkow-logo.webp"></div>
+                                    <div>
+                                        <p class="text-xl leading-6 project-title m-0">Kahkow</p>
+                                        <p class="text-base leading-5 project-subtitle m-0 -mt-1">Ecommerce Experience
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="cancercare.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
+                                    <div class="w-10 h-10"><img class="w-full h-full object-contain"
+                                            src="/src/assets/images/utils/cancercare-logo.webp"></div>
+                                    <div>
+                                        <p class="text-xl leading-6 project-title m-0">Cancer<i>Care</i></p>
+                                        <p class="text-base leading-5 project-subtitle m-0 -mt-1">Cancer support
+                                            services
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="alpha-express.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
+                                    <div class="w-10 h-10"><img class="w-full h-full object-contain"
+                                            src="/src/assets/images/utils/alpha-express-logo.webp"></div>
+                                    <div>
+                                        <p class="text-xl leading-6 project-title m-0">Alpha Express</p>
+                                        <p class="text-base leading-5 project-subtitle m-0 -mt-1">Investment service</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p
+                            class="text-xl arrow-wrapper flex flex-nowrap gap-1 items-center relative mb-0 cursor-default drop-down-title">
+                            Work</p>
+                        
+                    </div>
+                        <p class="text-xl  mb-0 cursor-pointer">About</p>
+                    <div class="divisor"></div>
+                    <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
+                            alt="Leonardo Jimenez">
+                    </div>
+                    <h5>Schedule a<br>call with me</h5>
+                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                        <button class="capitalize px-4 py-3 text-xl leading-6">
+                            Let’s get started!
+                        </button>
+                    </a>
                 </div>
-                <h5>Schedule a<br>call with me</h5>
-                <a href="https://calendly.com/leonardo-a-jimenez/45min">
-                    <button class="capitalize px-4 py-3 text-xl leading-6">
-                        Let’s get started!
-                    </button>
-                </a>
             </div>
+            <img class="only-mobile" src="/src/assets/images/icons/menu.svg">
         </div>
-        <img class="only-mobile" src="/src/assets/images/icons/menu.svg">
+    </div>
+
+    <!-- About content container -->
+    <div class="about-container container bg-red-600 mx-auto">
+        <div class="flex flex-nowrap">
+            <div class="basis-[28.875rem]"></div>
+            <div class="flex-1"></div>
+
+        </div>
     </div>
 
     <!-- DESCRIPTION -->
@@ -56,9 +106,9 @@
                     </p>
                 </div>
                 <div class="flex gap-2">
-                    <h5 class="hover:scale-150 hover:rounded-2xl transition-all js-scroll">UX Design</h5>
-                    <h5 class="hover:scale-150 hover:rounded-2xl transition-all js-scroll">Research</h5>
-                    <h5 class="hover:scale-150 hover:rounded-2xl transition-all js-scroll">Frontend</h5>
+                    <h5 class="js-scroll">UX Design</h5>
+                    <h5 class="js-scroll">Research</h5>
+                    <h5 class="js-scroll">Frontend</h5>
                 </div>
             </div>
         </div>
@@ -231,7 +281,7 @@
                     improve search.
                 </p>
             </div>
-            <div class="grid grid-cols-1 gap-6 laptop:gap-x-5 laptop:gap-y-12 laptop:grid-cols-2">
+            <div class="grid grid-cols-1 gap-6 laptop:gap-x-5 laptop:gap-y-12 laptop:grid-cols-2 overflow-hidden">
                 <div class="row-span-2 comes-from-upper-left angled-scroll js-scroll">
                     <img class="mx-auto pointer-events-none select-none w-full"
                         src="/src/assets/images/kahkow/home.webp">
@@ -304,8 +354,8 @@
             </div>
             <div class="grid grid-cols-1 tablet:grid-cols-2 gap-4 business-card-grid text-block user-search">
                 <div class="business-card p-6">
-                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img class="pointer-events-none select-none"
-                            src="/src/assets/images/kahkow/flowers.svg">
+                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img
+                            class="pointer-events-none select-none" src="/src/assets/images/kahkow/flowers.svg">
                         <p class="m-0 card-title">Flowers</p>
                     </div>
                     <p class="js-scroll">
@@ -315,7 +365,8 @@
                     </p>
                 </div>
                 <div class="business-card p-6">
-                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img class="pointer-events-none select-none"
+                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img
+                            class="pointer-events-none select-none"
                             src="/src/assets/images/kahkow/special-ocassions.svg">
                         <p class="m-0 card-title">Special Ocassions</p>
                     </div>
@@ -328,8 +379,8 @@
                     </p>
                 </div>
                 <div class="business-card p-6">
-                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img class="pointer-events-none select-none"
-                            src="/src/assets/images/kahkow/giftcards.svg">
+                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img
+                            class="pointer-events-none select-none" src="/src/assets/images/kahkow/giftcards.svg">
                         <p class="m-0 card-title">Giftcards</p>
                     </div>
                     <p class="js-scroll">
@@ -340,8 +391,8 @@
                     </p>
                 </div>
                 <div class="business-card p-6">
-                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img class="pointer-events-none select-none"
-                            src="/src/assets/images/kahkow/corporate-gifts.svg">
+                    <div class="flex justify-start items-center gap-6 mb-7 js-scroll"><img
+                            class="pointer-events-none select-none" src="/src/assets/images/kahkow/corporate-gifts.svg">
                         <p class="m-0 card-title">Corporate Gifts</p>
                     </div>
                     <p class="js-scroll">
@@ -377,7 +428,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-4 laptop:gap-x-5 laptop:gap-y-12 laptop:grid-cols-2 container mx-auto">
+        <div class="grid grid-cols-1 gap-4 laptop:gap-x-5 laptop:gap-y-12 laptop:grid-cols-2 container mx-auto overflow-hidden">
             <div class="w-full relative home-chocolate row-span-2">
                 <div class="fit mx-auto">
                     <div class="comes-from-upper-left angled-scroll js-scroll">
@@ -425,9 +476,9 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer-bg footer">
+    <div class="footer-bg footer kahkow-footer">
         <div id="block" class="container mx-auto">
-            <h1 class="mb-8 font-medium js-scroll">
+            <h1 class="mb-8 font-medium js-scroll text-kahkow-brand-color">
                 Do you want me on your<br>
                 team? Let’s talk about it
             </h1>
@@ -473,58 +524,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const scrollOffset = 0;
-        const angledScrollOffset = 175;
-        const scrollElements = document.querySelectorAll(".js-scroll");
-
-        scrollElements.forEach((el) =>  {
-            el.style.opacity = 0;
-            if(el.classList.contains('comes-from-upper-left')) {
-                el.style.transform = `translate(-${angledScrollOffset}px, -${angledScrollOffset}px)`
-            } else if(el.classList.contains('comes-from-upper-right')) {
-                el.style.transform = `translate(${angledScrollOffset}px, -${angledScrollOffset}px)`
-            } else if(el.classList.contains('comes-from-bottom-right')) {
-                el.style.transform = 'translate(75px, 75px)'
-            }else {
-                el.style.transform = 'translateY(75px)';
-            }
-        });
-
-        const elementInView = (el, scrollOffset = 0) => {
-            const elementTop = el.getBoundingClientRect().top;
-
-            if(el.classList.contains('comes-from-upper-left') || el.classList.contains('comes-from-upper-right')) {
-                console.log(el)
-                scrollOffset += angledScrollOffset + 100
-            }
-
-            // console.log(el)
-
-            return (
-                elementTop <=
-                ((window.innerHeight || document.documentElement.clientHeight) - scrollOffset)
-            );
-        };
-
-        const displayScrollElement = (element) => {
-            element.classList.add("scrolled");
-        };
-
-        const handleScrollAnimation = () => {
-            scrollElements.forEach((el) => {
-                if (elementInView(el, scrollOffset)) {
-                    displayScrollElement(el);
-                }
-            })
-        }
-
-        window.addEventListener('scroll', () => {
-            handleScrollAnimation();
-        })
-
-        handleScrollAnimation();
-    </script>
+    <script src="/src/assets/js/slide-up.js" type="module"></script>
 </body>
 
 </html>

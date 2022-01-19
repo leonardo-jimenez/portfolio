@@ -8,7 +8,11 @@ module.exports = {
       'laptop': '1024px',
       'desktop': '1200px'
     },
-    extend: {},
+    extend: {
+      colors: {
+        'kahkow-brand-color': '#202020',
+      },
+    },
   },
   plugins: [],
 }
