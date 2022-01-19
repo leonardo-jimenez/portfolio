@@ -19,11 +19,8 @@ const elementInView = (el, scrollOffset = 0) => {
     const elementTop = el.getBoundingClientRect().top;
 
     if(el.classList.contains('comes-from-upper-left') || el.classList.contains('comes-from-upper-right')) {
-        console.log(el)
         scrollOffset += angledScrollOffset + 100
     }
-
-    // console.log(el)
 
     return (
         elementTop <=

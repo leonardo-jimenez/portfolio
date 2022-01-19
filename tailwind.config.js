@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'kahkow-brand-color': '#202020',
+        'soft-blue': '#084E8A',
       },
     },
   },

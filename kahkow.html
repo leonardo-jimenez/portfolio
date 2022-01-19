@@ -14,15 +14,15 @@
 
 <body>
     <!-- HEADER -->
-    <div class="sticky top-0 z-50 bg-white border-b-2">
-        <div class="container mx-auto flex justify-between items-center header kahkow-header">
+    <div id="header-container" class="sticky top-0 z-50 bg-white border-b-2 border-gray-300 header kahkow-header">
+        <div class="container mx-auto flex justify-between items-center">
             <a href="/">
                 <h4><b>leonardo</b>jimenez</h4>
             </a>
             <div class="w-full hide-mobile">
                 <div class="justify-end flex items-center gap-8">
                     <div class="relative nav-drop-down-container">
-                        <div class="arrow-container absolute z-10 hidden left-2/4 -translate-x-1/2 pt-14">
+                        <div class="arrow-container absolute z-10 hidden left-2/4 -translate-x-1/2 pt-9 mt-5">
                             <div class="nav-bar-arrow"></div>
                             <div class="px-6 py-8 work-dropdown w-max bg-white">
                                 <a href="kahkow.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
@@ -59,9 +59,9 @@
                         <p
                             class="text-xl arrow-wrapper flex flex-nowrap gap-1 items-center relative mb-0 cursor-default drop-down-title">
                             Work</p>
-                        
+
                     </div>
-                        <p class="text-xl  mb-0 cursor-pointer">About</p>
+                    <p id="header-about" class="text-xl mb-0 cursor-pointer">About</p>
                     <div class="divisor"></div>
                     <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
                         <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
@@ -77,13 +77,56 @@
             </div>
             <img class="only-mobile" src="/src/assets/images/icons/menu.svg">
         </div>
-    </div>
+        <!-- About content container -->
+        <div id="about-modal" class="about-container hidden container mx-auto bg-white absolute left-2/4 -translate-x-1/2">
+            <div class="flex flex-nowrap bg-white">
+                <div class="basis-[28.875rem] flex-shrink-0 flex-grow-0">
+                    <img src="/src/assets/images/utils/leonardos-about-pic.webp" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1 flex flex-col">
+                    <div class="px-14 pt-12">
+                        <div class="flex justify-between">
+                        <p class="mb-2 text-[#858585] text-2xl leading-7 uppercase">hi, I’m Leonardo</p>
 
-    <!-- About content container -->
-    <div class="about-container container bg-red-600 mx-auto">
-        <div class="flex flex-nowrap">
-            <div class="basis-[28.875rem]"></div>
-            <div class="flex-1"></div>
+                            <img id="about-modal-close-button" class="w-8 h-8 cursor-pointer -mt-3" src="/src/assets/images/utils/modal-close.svg" alt="" srcset="">
+                        </div>
+                        <p class="mb-4 text-kahkow-brand-color text-5xl lea">I use design to solve business problems</p>
+                        <p class="text-[#858585] text-xl leading-6">
+                            I’m a multidisciplinary designer with a background in industrial and software engineering. I
+                            am
+                            currently looking for full-time remote roles but open to freelance engagements.
+                            <br>
+                            <br>
+                            With 7+ years developing web products and services. Built, redesigned and shipped +20
+                            products
+                            both as a solo developer and in the last couple of years as a Product Designer.
+                            <br>
+                            <br>
+                            An avid youtube creator, 100+ videos and live podcasts talking about technology and finances
+                            for
+                            the hispanic community.
+                            <br>
+                            <br>
+                            Always willing to collaborate or carry out new inspiring projects. If you’d like to discuss
+                            a
+                            potential idea or know about me and my work, don’t hesitate to contact me.
+                        </p>
+                    </div>
+                    <div class="bg-[#F7F8FA] py-9 px-14 flex gap-8 mt-auto">
+                        <a class="px-4 py-3 text-xl leading-6 text-white bg-kahkow-brand-color font-normal"
+                            href="https://calendly.com/leonardo-a-jimenez/45min">
+                            Let’s get started!
+                        </a>
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
+                                alt="Leonardo Jimenez">
+                        </div>
+                        <h5 class="text-kahkow-brand-color">Schedule a<br>call with me</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div id="about-modal-arrow" class="nav-bar-arrow z-[-1]"></div>
 
         </div>
     </div>
@@ -428,7 +471,8 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-4 laptop:gap-x-5 laptop:gap-y-12 laptop:grid-cols-2 container mx-auto overflow-hidden">
+        <div
+            class="grid grid-cols-1 gap-4 laptop:gap-x-5 laptop:gap-y-12 laptop:grid-cols-2 container mx-auto overflow-hidden">
             <div class="w-full relative home-chocolate row-span-2">
                 <div class="fit mx-auto">
                     <div class="comes-from-upper-left angled-scroll js-scroll">
@@ -525,6 +569,7 @@
         </div>
     </div>
     <script src="/src/assets/js/slide-up.js" type="module"></script>
+    <script src="/src/assets/js/about-modal.js" type="module"></script>
 </body>
 
 </html>
