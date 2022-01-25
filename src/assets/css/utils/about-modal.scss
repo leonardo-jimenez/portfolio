@@ -7,6 +7,12 @@
     margin: 0px;
     height: fit-content;
     height: -moz-fit-content;
+    max-width: unset;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1200px;
+        
+    }
 }
 
 .modal-background {
@@ -19,8 +25,14 @@
     overflow: hidden scroll;
     padding: 2rem;
     align-items: center;
+
 }
 
 .modal-background.open-modal {
-    display: flex;
+
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+    }
+
 }

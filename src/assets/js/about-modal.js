@@ -17,17 +17,31 @@ modalBackground.addEventListener("click", function () {
     toggleModal()
 });
 
+if(window.scrollY <= 5){
+    headerContainer.style.border = 'none'
+} else {
+    headerContainer.style.removeProperty('border');
+}
+
+window.addEventListener("scroll", function(){
+    if(window.scrollY <= 5){
+        headerContainer.style.border = 'none'
+    } else {
+        headerContainer.style.removeProperty('border');
+    }
+  });
+
 
 window.addEventListener('resize', function (event) {
 }, true);
 
 function toggleModal() {
     console.log(modalBackground.style.display)
-    if (modalBackground.style.display != 'flex') {
-        modalBackground.style.display = 'flex'
+    if (!modalBackground.classList.contains('open-modal')) {
+        modalBackground.classList.add('open-modal')
         document.body.style.overflow = 'hidden'
     } else {
-        modalBackground.style.display = 'none'
+        modalBackground.classList.remove('open-modal')
         document.body.style.overflow = 'auto'
     }
 }
