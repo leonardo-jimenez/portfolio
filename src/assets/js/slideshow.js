@@ -1,6 +1,8 @@
 const slideshowContainer = document.getElementById('slideshow-container')
 const slideshowDotsContainer = document.getElementById('slideshow-dots-container')
 const slideShowItems = slideshowContainer.querySelectorAll(':scope > *')
+const previousArrow = document.getElementById('previous-arrow')
+const nextArrow = document.getElementById('next-arrow')
 
 let currentSlide = 0;
 let slidesAmount = slideShowItems.length
@@ -29,27 +31,37 @@ slideshowDots.forEach((el, index) => {
     });
 });
 
+previousArrow.addEventListener("click", function () {
+    changeSlide(currentSlide - 1)
+});
 
-function nextSlide() {
-    slideShowItems[currentSlide].classList.remove('current');
-    slideshowDots[currentSlide].classList.remove('current');
-    currentSlide == slidesAmount - 1 ? currentSlide = 0 : currentSlide += 1;
-    slideShowItems[currentSlide].classList.add('current')
-    slideshowDots[currentSlide].classList.add('current')
-}
+nextArrow.addEventListener("click", function () {
+    changeSlide(currentSlide + 1)
+});
 
 function changeSlide(index) {
     if (index != currentSlide) {
+        clearInterval(slideInterval)
+
         slideShowItems[currentSlide].classList.remove('current');
         slideshowDots[currentSlide].classList.remove('current');
-        currentSlide = index
+        if (index >= slidesAmount) {
+            currentSlide = 0
+        } else if (index < 0) {
+            currentSlide = slidesAmount - 1
+        } else {
+            currentSlide = index;
+        }
         slideShowItems[currentSlide].classList.add('current')
         slideshowDots[currentSlide].classList.add('current')
-        clearInterval(slideInterval)
-        setInterval(nextSlide, 4000);
+
+        slideInterval = window.setInterval(function () {
+            changeSlide(currentSlide + 1)
+        }, 4000);
+
     }
 }
 
 let slideInterval = window.setInterval(function () {
-    nextSlide()
+    changeSlide(currentSlide + 1)
 }, 4000);
