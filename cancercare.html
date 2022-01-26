@@ -451,9 +451,23 @@
                     of pictures and text to a more brand recognisable element offering more specific information.
                 </p>
             </div>
-            <div class="slideshow">
-                <div class="js-scroll mb-10"><img class="w-full"
-                        src="/src/assets/images/cancercare/cancercare-home-1440px-1.webp"></div>
+            <div id="slideshow-wrapper" class="js-scroll">
+                <div id="slideshow-container" class="slideshow-container grid">
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-1.webp">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-2.webp">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-3.webp">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-4.webp">
+                    </div>
+                </div>
+                <div id="slideshow-dots-container" class="hidden tablet:grid grid-flow-col w-fit  items-center mx-auto gap-x-5 slideshow-dots">
+                </div>
             </div>
         </div>
     </div>
@@ -624,6 +638,7 @@
     <script src="/src/assets/js/slide-up.js" type="module"></script>
     <script src="/src/assets/js/about-modal.js" type="module"></script>
     <script src="/src/assets/js/mobile-nav-slide.js" type="module"></script>
+    <script src="/src/assets/js/slideshow.js" type="module"></script>
 </body>
 
 </html>

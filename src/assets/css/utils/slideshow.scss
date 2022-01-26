@@ -1,0 +1,23 @@
+.slide {
+    transition: opacity 1s;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    opacity: 0;
+
+    &.current {
+        opacity: 1;
+    }
+
+}
+
+.slideshow-dots > *{
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #B1D1E7;
+    border-radius: 50%;
+    transition: background-color 1s;
+
+    &.current {
+        background-color: #3B8BC3;
+    }
+}
