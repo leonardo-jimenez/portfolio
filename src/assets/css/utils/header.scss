@@ -103,7 +103,7 @@
 
     .mobile-nav-container {
         transition: height .75s, opacity .75s;
-        overflow  : hidden;
+        // overflow  : hidden;
         height    : 0;
         opacity: 0;
         animation-name: closeMobileNavbar;

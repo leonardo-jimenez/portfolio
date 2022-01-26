@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'kahkow-brand-color': '#202020',
+        'cancercare-brand-color': '#035A83',
         'soft-blue': '#084E8A',
         'color-tourcoise': '#035A83',
         'smooth-gray': '#686B77',

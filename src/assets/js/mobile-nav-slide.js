@@ -13,8 +13,9 @@ mobileNavCloseButton.addEventListener("click", function () {
 function toggleMobileNav() {
         if (mobileNavContainer.classList.contains('open')) {
             mobileNavContainer.classList.remove('open')
-            mobileNavContainer.classList.add('opened-to-close')
+            document.body.style.overflow = 'auto'
         } else {
             mobileNavContainer.classList.add('open')
+            document.body.style.overflow = 'hidden'
         }
 }
