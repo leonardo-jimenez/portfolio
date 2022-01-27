@@ -10,7 +10,7 @@
 
 }
 
-.slideshow-dots > *{
+.slideshow-dots > * {
     width: 1.25rem;
     height: 1.25rem;
     background-color: #B1D1E7;
@@ -19,5 +19,29 @@
 
     &.current {
         background-color: #3B8BC3;
+    }
+}
+
+.slideshow-nav > * {
+
+    .current-icon {
+        display: none;
+    }
+    
+    &.current {
+        background-color: $color-soft-blue;
+
+        img:not(.current-icon) {
+            display: none;
+        }
+
+        .current-icon {
+            display: block;
+        }
+
+        p {
+            color: white;
+        }
+
     }
 }
