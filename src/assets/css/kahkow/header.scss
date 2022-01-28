@@ -1,16 +1,7 @@
 .header.kahkow-header {
-  h4, p, h5 {
-    // color: $color-black;
-    b {
-      // color: inherit;
-    }
-  }
 
-  // p {
-  //   // margin: 0;
-  // }
-
-  button, .divisor {
+  button,
+  .divisor {
     background-color: $color-black;
   }
 
@@ -20,8 +11,8 @@
 
   .arrow-wrapper {
     &:after {
-        border-top-color: $color-black;
+      border-top-color: $color-black;
     }
-}
+  }
 
 }

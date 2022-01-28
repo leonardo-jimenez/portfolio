@@ -14,6 +14,7 @@ module.exports = {
         'kahkow-brand-color': '#202020',
         'cancercare-brand-color': '#035A83',
         'alpha-express-brand-color': '#084E8A',
+        'home-page-brand-color': '#1A2760',
         'soft-blue': '#084E8A',
         'color-tourcoise': '#035A83',
         'smooth-gray': '#686B77',
