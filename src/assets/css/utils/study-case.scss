@@ -20,7 +20,7 @@
         font-size: $text-size-sm;
         line-height: $text-line-height-sm;
         margin-bottom: $global-spacing-md;
-        max-width: 16rem;
+        // max-width: 16rem;
     }
     & .side-image {
         display: none;
@@ -29,7 +29,7 @@
     button {
         transition:
             background-color 0.1s ease,
-            color 0.1s ease;
+            color 0.1s ease, opacity 2s, transform 1s;
         background-color: transparent;
         color: $color-white;
         border: 2px solid $color-white;
@@ -69,7 +69,7 @@
             font-size: $text-size-base;
             line-height: $text-line-height-base;
             margin-bottom: $global-spacing-xl;
-            max-width: 24rem;
+            // max-width: 24rem;
         }
     }
 }

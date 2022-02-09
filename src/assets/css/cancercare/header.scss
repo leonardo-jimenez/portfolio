@@ -1,0 +1,14 @@
+.header.cancercare-header {
+
+
+  img.only-mobile {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(13%) saturate(7092%) hue-rotate(171deg) brightness(94%) contrast(98%);
+  }
+
+  .arrow-wrapper {
+    &:after {
+      border-top-color: $color-tourcoise;
+    }
+  }
+
+}

@@ -1,83 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kahkow study case</title>
-        <link rel="preload" href="/src/assets/css/fonts.css" as="style">
-        <link rel="stylesheet" href="/src/assets/css/fonts.css">
-        <link rel="stylesheet" href="/src/assets/css/home/style.scss">
-    </head>
-    <body>
-        <!-- HEADER -->
-        <div class="container mx-auto flex justify-between items-center header">
-            <a href="/"><h4><b>leonardo</b>jimenez</h4></a>
-            <div class="w-full hide-mobile">
-                <div class="justify-end flex items-center gap-8">
-                    <p class="text-xl">Work</p>
-                    <p class="text-xl">About</p>
-                    <div class="divisor"></div>
-                    <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
-                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp" alt="Leonardo Jimenez">
-                    </div>
-                    <h5>Schedule a<br>call with me</h5>
-                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
-                        <button class="capitalize px-4 py-3 text-xl leading-6">
-                            Let’s get started!
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <img class="only-mobile" src="/src/assets/images/icons/menu.svg">
-        </div>
 
-        <!-- FOOTER -->
-        <div class="cancercare-footer footer-bg footer">
-            <div id="block" class="container mx-auto">
-                <h1 class="mb-8 font-medium">
-                    There’s a lot more I can do<br>
-                    for you. Let’s talk
-                </h1>
-                <div class="schedule">
-                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
-                        <button class="normal-case px-4 py-3 text-xl leading-6 whitespace-nowrap">
-                            Let’s get started!
-                        </button>
-                    </a>
-                    <div class="portrait rounded-full bg-gray-300 overflow-hidden">
-                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp" alt="Leonardo Jimenez">
+<head>
+    <link rel="icon" type="image/svg+xml" href="leos-favicon.jpg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CancerCare study case</title>
+    <link rel="preload" href="/src/assets/css/fonts.css" as="style">
+    <link rel="stylesheet" href="/src/assets/css/fonts.css">
+    <link rel="stylesheet" href="/src/assets/css/cancercare/style.scss">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header-container" class="sticky top-0 z-20 bg-white border-b-2 border-gray-300 header cancercare-header">
+        <!-- About content container -->
+        <div id="modal-background" class="header z-30 relative modal-background">
+            <div id="about-modal" onclick="event.stopPropagation()"
+                class="about-container container mx-auto bg-white absolute left-2/4 -translate-x-1/2">
+                <div class="flex flex-nowrap bg-white">
+                    <div class="basis-[28.875rem] flex-shrink-0 flex-grow-0">
+                        <img src="/src/assets/images/utils/leonardos-about-pic.webp" class="w-full h-full object-cover">
                     </div>
-                    <h5>Schedule a<br>call with me</h5>
+                    <div class="flex-1 flex flex-col">
+                        <div class="px-14 pt-12">
+                            <div class="flex justify-between">
+                                <p class="mb-2 text-[#858585] text-2xl leading-7 uppercase">hi, I’m Leonardo</p>
+
+                                <img id="about-modal-close-button" class="w-8 h-8 cursor-pointer -mt-3"
+                                    src="/src/assets/images/utils/modal-close.svg" alt="" srcset="">
+                            </div>
+                            <p class="mb-4 text-cancercare-brand-color text-5xl lea">I use design to solve business
+                                problems
+                            </p>
+                            <p class="text-[#858585] text-xl leading-6">
+                                I’m a multidisciplinary designer with a background in industrial and software
+                                engineering. I
+                                am
+                                currently looking for full-time remote roles but open to freelance engagements.
+                                <br>
+                                <br>
+                                With 7+ years developing web products and services. Built, redesigned and shipped +20
+                                products
+                                both as a solo developer and in the last couple of years as a Product Designer.
+                                <br>
+                                <br>
+                                An avid youtube creator, 100+ videos and live podcasts talking about technology and
+                                finances
+                                for
+                                the hispanic community.
+                                <br>
+                                <br>
+                                Always willing to collaborate or carry out new inspiring projects. If you’d like to
+                                discuss
+                                a
+                                potential idea or know about me and my work, don’t hesitate to contact me.
+                            </p>
+                        </div>
+                        <div class="bg-[#F7F8FA] py-9 px-14 flex gap-8 mt-auto">
+                            <a class="px-4 py-3 text-xl leading-6 text-white bg-cancercare-brand-color font-normal"
+                                href="https://calendly.com/leonardo-a-jimenez/45min">
+                                Let’s get started!
+                            </a>
+                            <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                                <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
+                                    alt="Leonardo Jimenez">
+                            </div>
+                            <h5 class="text-cancercare-brand-color">Schedule a<br>call with me</h5>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        
-        <!-- ALPHA EXPRESS -->
-        <div class="alpha-express-bg relative overflow-hidden">
-            <img class="w-full h-full object-cover absolute" src="/src/assets/images/utils/alpha-express-bg.webp">
-            <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
-                <div class="study-case flex justify-between items-center grid">
-                    <div class="content">
-                        <p class="next">Next case</p>
-                        <h2 class="font-semibold">
-                            Alpha Express
-                        </h2>
-                        <p>
-                            Building the future of wealth
-                            management and finances in the DR
-                        </p>
-                        <a href="/alpha-express">
-                            <button class="font-medium whitespace-nowrap">
-                                See case study
-                            </button>
+        <!-- Mobile nav container -->
+        <div id="mobile-nav-container"
+            class="absolute mobile-nav-container z-30 bg-white w-full -mt-6 laptop:hidden overflow-y-auto">
+            <div class="container p-6 mx-auto">
+                <div class="flex flex-nowrap justify-between mb-5">
+                    <a href="/">
+                        <h4 class="text-cancercare-brand-color"><b
+                                class="text-cancercare-brand-color">leonardo</b>jimenez</h4>
+                    </a>
+                    <img id="mobile-nav-close-button" class="w-6 h-6 cursor-pointer"
+                        src="/src/assets/images/utils/modal-close.svg" alt="" srcset="">
+                </div>
+                <div class="arrow-wrapper flex flex-nowrap gap-1 items-center mb-4">
+                    <p class="text-base m-0 text-cancercare-brand-color">Work</p>
+
+                </div>
+                <div class="mb-8">
+                    <div class="overflow-hidden mb-6">
+                        <a href="kahkow.html" class="flex flex-row flex-nowrap gap-5">
+                            <div class="w-10 h-10 project-image"><img class="w-full h-full object-contain"
+                                    src="/src/assets/images/utils/kahkow-logo.webp"></div>
+                            <div>
+                                <p class="text-xl leading-6 project-title m-0 text-color-tourcoise project-name">Kahkow
+                                </p>
+                                <p
+                                    class="text-base leading-5 project-subtitle m-0 -mt-1 text-smooth-gray project-description">
+                                    Ecommerce
+                                    Experience
+                                </p>
+                            </div>
                         </a>
                     </div>
-                    <div class="side-image">
-                        <img src="/src/assets/images/utils/alpha-express-pg-rep.webp" alt="Cancercare Page Presentation">
+                    <div class="overflow-hidden mb-6">
+                        <a href="cancercare.html" class="flex flex-row flex-nowrap gap-5">
+                            <div class="w-10 h-10 project-image"><img class="w-full h-full object-contain"
+                                    src="/src/assets/images/utils/cancercare-logo.webp"></div>
+                            <div>
+                                <p class="text-xl leading-6 project-title m-0 text-color-tourcoise project-name">
+                                    Cancer<i class="text-color-tourcoise">Care</i></p>
+                                <p
+                                    class="text-base leading-5 project-subtitle m-0 -mt-1 text-smooth-gray project-description">
+                                    Cancer
+                                    support
+                                    services
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden">
+                        <a href="alpha-express.html" class="flex flex-row flex-nowrap gap-5">
+                            <div class="w-10 h-10 project-image"><img class="w-full h-full object-contain"
+                                    src="/src/assets/images/utils/alpha-express-logo.webp"></div>
+                            <div>
+                                <p class="text-xl leading-6 project-title m-0 text-color-tourcoise project-name">Alpha
+                                    Express</p>
+                                <p
+                                    class="text-base leading-5 project-subtitle m-0 -mt-1 text-smooth-gray project-description">
+                                    Investment
+                                    service</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-about">
+                    <p class="text-cancercare-brand-color text-base mb-3">About</p>
+                    <p class="uppercase text-common-gray text-base mb-2 ">hi, I’m Leonardo</p>
+                    <p class="uppercase text-soft-blue text-2xl leading-7 mb-2 ">I use design to solve business problems
+                    </p>
+                    <p class="text-2xl text-common-gray mb-5 ">I’m a multidisciplinary designer with a
+                        background in industrial and software engineering. I am
+                        currently looking for full-time remote roles but open to freelance engagements.
+                        <br>
+                        <br>
+                        I’m more talkative on desktop and tablets. If you’d like to discuss a potential idea or know
+                        about me and my work, don’t hesitate to contact me.
+                    </p>
+                    <div class="flex gap-6 mt-auto justify-start ">
+                        <a class="px-4 py-3 text-xl leading-6 text-white bg-cancercare-brand-color font-normal"
+                            href="https://calendly.com/leonardo-a-jimenez/45min">
+                            Let’s get started!
+                        </a>
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
+                                alt="Leonardo Jimenez">
+                        </div>
+                        <h5 class="text-cancercare-brand-color">Schedule a<br>call with me</h5>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/">
+                <h4 class="text-cancercare-brand-color"><b class="text-cancercare-brand-color">leonardo</b>jimenez</h4>
+            </a>
+            <div class="w-full hide-mobile">
+                <div class="justify-end flex items-center gap-8">
+                    <div class="relative nav-drop-down-container">
+                        <div class="arrow-container absolute z-10 hidden left-2/4 -translate-x-1/2 pt-9 mt-5">
+                            <div class="nav-bar-arrow"></div>
+                            <div class="px-6 py-8 work-dropdown w-max bg-white">
+                                <a href="kahkow.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
+                                    <div class="w-10 h-10"><img class="w-full h-full object-contain"
+                                            src="/src/assets/images/utils/kahkow-logo.webp"></div>
+                                    <div>
+                                        <p class="text-xl leading-6 project-title m-0 text-color-tourcoise">Kahkow</p>
+                                        <p class="text-base leading-5 project-subtitle m-0 -mt-1 text-smooth-gray">
+                                            Ecommerce Experience
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="cancercare.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
+                                    <div class="w-10 h-10"><img class="w-full h-full object-contain"
+                                            src="/src/assets/images/utils/cancercare-logo.webp"></div>
+                                    <div>
+                                        <p class="text-xl leading-6 project-title m-0 text-color-tourcoise">
+                                            Cancer<i>Care</i></p>
+                                        <p class="text-base leading-5 project-subtitle m-0 -mt-1 text-smooth-gray">
+                                            Cancer support
+                                            services
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="alpha-express.html" class="flex flex-row flex-nowrap gap-5 px-4 pt-4 pb-5">
+                                    <div class="w-10 h-10"><img class="w-full h-full object-contain"
+                                            src="/src/assets/images/utils/alpha-express-logo.webp"></div>
+                                    <div>
+                                        <p class="text-xl leading-6 project-title m-0 text-color-tourcoise">Alpha
+                                            Express</p>
+                                        <p class="text-base leading-5 project-subtitle m-0 -mt-1 text-smooth-gray">
+                                            Investment service</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p
+                            class="text-xl arrow-wrapper flex flex-nowrap gap-1 items-center relative mb-0 cursor-default drop-down-title text-cancercare-brand-color">
+                            Work</p>
+
+                    </div>
+                    <p id="header-about" class="text-xl mb-0 cursor-pointer text-cancercare-brand-color">About</p>
+                    <div class="divisor bg-cancercare-brand-color"></div>
+                    <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                        <img width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
+                            alt="Leonardo Jimenez">
+                    </div>
+                    <h5 class="text-cancercare-brand-color">Schedule a<br>call with me</h5>
+                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                        <button class="capitalize px-4 py-3 text-xl leading-6 bg-cancercare-brand-color">
+                            Let’s get started!
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <img id="mobile-nav-open-toggle" class="only-mobile" src="/src/assets/images/icons/menu.svg">
+        </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="cancercare w-full relative overflow-hidden mb-5 laptop:mb-[6.5rem] pt-12 laptop:pt-20">
+        <div class="container mx-auto">
+            <div class="sc-description">
+                <div class="content">
+                    <p class="js-scroll text-[#65A53A] mb-1 text-base laptop:text-xl desktop:text-2xl">Cancercare</p>
+                    <h1 class="js-scroll max-w-[60.5rem] text-cancercare-brand-color mb-5 laptop:mb-6">
+                        Improving the emotional, practical and financial challenges of cancer
+                    </h1>
+                    <p class="js-scroll max-w-[37.125rem] mb-5 text-smooth-gray">
+                        Covid restrictions made life difficult for all the people affected by cancer, Cancercare needed
+                        to improve their experience to provide help and support in a closed economy.
+                    </p>
+                </div>
+                <div class="hidden phone:flex gap-2 flex-wrap">
+                    <h5 class="js-scroll text-low-gray bg-lite-gray py-1 desktop:py-2 px-5 desktop:px-9 text-xs desktop:text-xl">UX Design</h5>
+                    <h5 class="js-scroll text-low-gray bg-lite-gray py-1 desktop:py-2 px-5 desktop:px-9 text-xs desktop:text-xl">Frontend</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESCRIPTION 2 -->
+    <div class="relative pb-6 laptop:pb-12 overflow-hidden">
+        <div class="bg-[#B1D1E71F] absolute w-full h-full mt-[12.9%] pointer-events-none select-none js-scroll">
+        </div>
+        <div class="mx-auto laptop:max-w-[62rem] container">
+            <div class="js-scroll mb-6 laptop:mb-[7.5rem]"><img class="w-full"
+                    src="/src/assets/images/cancercare/cancercare-home-1440px-1.webp"></div>
+            <div class="flex flex-col laptop:flex-row justify-between gap-8">
+                <div class="laptop:max-w-[24.125rem] w-full">
+                    <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">The client</p>
+                    <p class="text-smooth-gray js-scroll text-base laptop:text-xl">In 2020, an estimated 1,806,590 new
+                        cases of cancer will be
+                        diagnosed in the United States
+                        and 606,520 people will die from the disease.
+                        <br>
+                        <br>
+                        Founded in 1944, CancerCare is the leading national organization providing free,
+                        professional support services and information to help people manage the emotional,
+                        practical
+                        and financial challenges of cancer.
+                        <br>
+                        <br>
+                        The pandemic was pivotal for changing the way the organization worked in order to better
+                        serve their customers.
+                    </p>
+                </div>
+                <div class="laptop:max-w-[24.125rem] w-full">
+                    <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">The objective</p>
+                    <p class="text-smooth-gray js-scroll text-base laptop:text-xl">
+                        We were commissioned to design a new look that represented the transition of the
+                        organization to a more digital presence.
+                        <br>
+                        <br>
+                        The client had invested years building a CMS to handle the amount of content created for
+                        the
+                        organization.
+                        <br>
+                        <br>
+                        It was important to keep what worked and improved the rough edges of the experience for
+                        the
+                        end user.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STYLEGUIDE -->
+    <div class="container mx-auto py-12 laptop:py-[7.5rem]">
+        <div class="mb-[3.75rem]">
+            <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">Styleguide</p>
+            <p class="text-smooth-gray js-scroll text-base laptop:text-xl mb-[4.5rem] max-w-[36.5rem]">The first step was
+                revising the font weights
+                and colors. We reduced the weight of the fonts to provide a more stylized and calming experience while
+                reading the site.
+                <br>
+                <br>
+                We also extended the range of colors used on the site, to handle a more diverse set of cases.
+            </p>
+            <div class="grid grid-cols-1 laptop:grid-cols-[min-content_auto] w-fit gap-4 laptop:gap-9">
+                <p class="text-smooth-gray js-scroll text-2xl w-fit	m-0">Typography</p>
+                <p class="font-bold text-[7.5rem] leading-[6rem] js-scroll mb-6 laptop:m-0 font-['Lato']">Lato</p>
+                <p class="text-smooth-gray js-scroll text-2xl w-fit	js-scroll	m-0">Medium
+                    <br>
+                    Regular
+                </p>
+                <p class="text-2xl max-w-[19.5rem] js-scroll m-0">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr
+                    Ss Tt Vv Ww Xx Yy Zz
+                    0123456789!@#$%^&*()</p>
+
+            </div>
+        </div>
+        <div class="mb-10 tablet:mb-24">
+            <p class="text-smooth-gray text-2xl laptop:text-[2.5rem] laptop:leading-[3rem] mb-4 laptop:mb-6 js-scroll">
+                Colors</p>
+            <div class="flex flex-wrap gap-4 max-w-4xl">
+                <div>
+                    <p class="text-smooth-gray mb-5 text-2xl tablet:text-[2rem] tablet:leading-9 js-scroll">Primary</p>
+                    <div class="grid grid-cols-4 grid-rows-3 h-[13.5rem] mb-6 w-72 js-scroll">
+                        <div class="bg-[#3B8BC3] col-start-1 col-span-3 row-start-1 row-span-3"></div>
+                        <div class="bg-[#123B61]"></div>
+                        <div class="bg-[#035A83]"></div>
+                        <div class="bg-[#3B8BC366]"></div>
+                    </div>
+                    <p class="text-smooth-gray text-xl tablet:text-2xl js-scroll m-0">HEX&nbsp;&nbsp;#3B8BC3<br>
+                        RGB&nbsp;&nbsp;59&nbsp;139&nbsp;195</p>
+                </div>
+                <div>
+                    <p class="text-smooth-gray mb-5 text-2xl tablet:text-[2rem] tablet:leading-9 js-scroll">Secondary
+                    </p>
+                    <div class="mb-6">
+                        <div class="grid grid-cols-4 grid-rows-3 h-[13.5rem] mb-6  w-72 js-scroll">
+                            <div class="bg-[#93C367] col-start-1 col-span-3 row-start-1 row-span-3"></div>
+                            <div class="bg-[#65A53A]"></div>
+                            <div class="bg-[#85C659]"></div>
+                            <div class="bg-[#BFEBA0]"></div>
+                        </div>
+                    </div>
+                    <p class="text-smooth-gray text-xl tablet:text-2xl js-scroll m-0">HEX&nbsp;&nbsp;#93C367<br>
+                        RGB&nbsp;&nbsp;147&nbsp;195&nbsp;103</p>
+                </div>
+                <div>
+                    <p class="text-smooth-gray mb-5 text-2xl tablet:text-[2rem] tablet:leading-9 js-scroll">Accent</p>
+                    <div class="mb-6">
+                        <div class="grid grid-cols-4 grid-rows-3 h-[13.5rem] mb-6 w-72 js-scroll">
+                            <div class="bg-[#D97928] col-start-1 col-span-3 row-start-1 row-span-3"></div>
+                            <div class="bg-[#FB8733]"></div>
+                            <div class="bg-[#F6C679]"></div>
+                            <div class="bg-[#F2D8C5]"></div>
+                        </div>
+                    </div>
+                    <p class="text-smooth-gray text-xl tablet:text-2xl js-scroll m-0">HEX&nbsp;&nbsp;#D97928<br>
+                        RGB&nbsp;&nbsp;217&nbsp;121&nbsp;40</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-smooth-gray text-2xl tablet:text-[2rem] tablet:leading-9 mb-3 laptop:mb-4 js-scroll">Grays
+            </p>
+            <div class="grid grid-cols-1 gap-4 tablet:grid-cols-4 tablet:gap-0 max-w-4xl">
+                <div>
+                    <div class="mb-2 tablet:mb-6 bg-[#777777] h-5 max-w-[14rem] js-scroll"></div>
+                    <p class="text-smooth-gray text-2xl js-scroll">HEX&nbsp;&nbsp;#777777</p>
+                </div>
+                <div>
+                    <div class="mb-2 tablet:mb-6 bg-[#979797] h-5 max-w-[14rem] js-scroll"></div>
+                    <p class="text-smooth-gray text-2xl js-scroll">HEX&nbsp;&nbsp;#979797</p>
+                </div>
+                <div>
+                    <div class="mb-2 tablet:mb-6 bg-[#B3B4B8] h-5 max-w-[14rem] js-scroll"></div>
+                    <p class="text-smooth-gray text-2xl js-scroll">HEX&nbsp;&nbsp;#B3B4B8</p>
+                </div>
+                <div>
+                    <div class="mb-2 tablet:mb-6 bg-[#F5F5F5] h-5 max-w-[14rem] js-scroll"></div>
+                    <p class="text-smooth-gray text-2xl js-scroll">HEX&nbsp;&nbsp;#F5F5F5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="relative pb-6 laptop:pb-12 overflow-hidden">
+        <div class="bg-[#B1D1E71F] absolute w-full h-full mt-[15.25rem] pointer-events-none select-none js-scroll">
+        </div>
+        <div class="mx-auto laptop:max-w-[62rem] container">
+            <div class="js-scroll mb-6 laptop:mb-[7.5rem]"><img class="w-full"
+                    src="/src/assets/images/cancercare/cancercare-home-1440px-1.webp"></div>
+            <div class="flex flex-col laptop:flex-row justify-between gap-8">
+                <div class="laptop:max-w-[24.125rem] w-full">
+                    <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">The client</p>
+                    <p class="text-smooth-gray js-scroll text-base laptop:text-xl">In 2020, an estimated 1,806,590 new
+                        cases of cancer will be
+                        diagnosed in the United States
+                        and 606,520 people will die from the disease.
+                        <br>
+                        <br>
+                        Founded in 1944, CancerCare is the leading national organization providing free,
+                        professional support services and information to help people manage the emotional,
+                        practical
+                        and financial challenges of cancer.
+                        <br>
+                        <br>
+                        The pandemic was pivotal for changing the way the organization worked in order to better
+                        serve their customers.
+                    </p>
+                </div>
+                <div class="laptop:max-w-[24.125rem] w-full">
+                    <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">The objective</p>
+                    <p class="text-smooth-gray js-scroll text-base laptop:text-xl">
+                        We were commissioned to design a new look that represented the transition of the
+                        organization to a more digital presence.
+                        <br>
+                        <br>
+                        The client had invested years building a CMS to handle the amount of content created for
+                        the
+                        organization.
+                        <br>
+                        <br>
+                        It was important to keep what worked and improved the rough edges of the experience for
+                        the
+                        end user.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- IMPROVED NAVIGATION -->
+    <div class=" bg-[#B1D1E71F]relative py-12 laptop:py-[7.5rem] overflow-hidden bg-[#B1D1E71F]">
+        <div class="mx-auto laptop:max-w-[62rem] container">
+            <div class="max-w-[29.25rem] mx-auto mb-6 laptop:mb-12">
+                <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">Improved Navigation</p>
+                <p class="text-smooth-gray js-scroll text-base laptop:text-xl mb-0 max-w-[36.5rem]">The header is a clear
+                    indication of where the user is and what is the page is about. We transformed the titles into a mix
+                    of pictures and text to a more brand recognisable element offering more specific information.
+                </p>
+            </div>
+            <div id="slideshow-wrapper" class="js-scroll">
+                <div id="slideshow-container" class="slideshow-container grid">
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-1.webp">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-2.webp">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-3.webp">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="/src/assets/images/cancercare/slide-cancercare-4.webp">
+                    </div>
+                </div>
+                <div id="slideshow-dots-container" class="hidden tablet:grid grid-flow-col w-fit  items-center mx-auto gap-x-5 slideshow-dots">
+                </div>
+                <div class="slide-arrow flex gap-6 justify-end flex-nowrap mt-6 tablet:hidden">
+                    <button class="bg-transparent p-0" id="previous-arrow"><img src="src/assets/images/icons/slide-arrow.svg"></button>
+                    <button class="bg-transparent p-0 rotate-180" id="next-arrow"><img src="src/assets/images/icons/slide-arrow.svg"></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WE WORKED WITH -->
+    <div class="py-12 laptop:py-[7.5rem]">
+        <div class="container max-w-[49.5rem] mx-auto">
+            <img class="mb-6 js-scroll" src="src/assets/images/cancercare/jaqueline.webp">
+            <p class="text-[#3B8BC3] text-2xl phone:text-[2rem] phone:leading-9 mb-6 js-scroll">“We worked
+                with
+                other designers, but the Leo was the one able to materialize successfully the changes we have been
+                discussing for years.”</p>
+            <p class="text-smooth-gray text-base m-0 js-scroll uppercase">Jacqueline Zahora, Director, Digital Communications,
+                cancercare
+            </p>
+        </div>
+    </div>
+
+    <!-- BETTER HEROES -->
+    <div class="bg-[#B1D1E71F] py-12 laptop:py-[7.5rem]">
+        <div class="container mx-auto">
+            <div class="flex gap-5 flex-col laptop:flex-row">
+                <div class="laptop:basis-96 laptop:grow-0 laptop:shrink-0">
+                    <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll js-scroll">Better
+                        Heroes</p>
+                    <p
+                        class="text-smooth-gray js-scroll text-base laptop:text-xl mb-9 laptop:mb-[4.5rem] max-w-[36.5rem] js-scroll">
+                        The headers is a clear indication of where the user is and what is the page is about, we
+                        transformed the headers into a mix of pictures and text to a more brand recognisable element
+                        offering clearer information.
+                    </p>
+                </div>
+                <div class="flex-grow laptop:pt-[6.25rem]">
+                    <img class="js-scroll mb-4 laptop:mb-0" src="src/assets/images/cancercare/better-heroes-1.webp">
+                    <img class="laptop:-mt-8 laptop:-ml-[12.5rem] mb-4 laptop:mb-0 js-scroll"
+                        src="src/assets/images/cancercare/better-heroes-2.webp">
+                    <div
+                        class="flex flex-col-reverse items-start laptop:flex-row relative flex-nowrap gap-6 justify-end laptop:-mt-3 laptop:-ml-[6.75rem] laptop:pr-[6.25rem] laptop:items-end js-scroll">
+                        <img class="laptop:absolute shrink-0 w-40 desktop:w-[12.5rem] laptop:mb-5 desktop:mb-10 laptop:-left-[13rem] js-scroll"
+                            src="src/assets/images/cancercare/better-heroes-4.webp">
+                        <img class="shrink-0 js-scroll" src="src/assets/images/cancercare/better-heroes-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WEBSITE -->
+    <div class="py-12 laptop:pt-[7.5rem] laptop:pb-[8.4375rem]">
+        <div class="container mx-auto">
+            <div class="mb-14 laptop:mb-28">
+                <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll js-scroll">Website</p>
+                <p
+                    class="text-smooth-gray js-scroll text-base laptop:text-xl mb-9 laptop:mb-[5.5rem] max-w-[29.25rem] js-scroll">
+                    Every page has a clear hierarchy that displays all the relevant information. All the components are
+                    responsive and adapt to the mobile view.
+                </p>
+                <div class="bg-[#F5F5F5] mb-6">
+                    <div class="grid laptop:grid-cols-2 gap-6 laptop:gap-16 items-end">
+                        <img class="js-scroll" src="src/assets/images/cancercare/website-1.webp">
+                        <img class="js-scroll" src="src/assets/images/cancercare/website-2.webp">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 laptop:grid-cols-[39%_auto] gap-6 items-end">
+                    <img class="js-scroll" src="src/assets/images/cancercare/website-3.webp">
+                    <img class="js-scroll" src="src/assets/images/cancercare/website-4.webp">
+                </div>
+            </div>
+            <div>
+                <p class="text-base text-smooth-gray laptop:text-xl mb-5 laptop:mb-9 max-w-[29.25rem] js-scroll">
+                    Components were
+                    redesigned to fit nicely on every breakpoint and mobile device.</p>
+                <div
+                    class="grid gap-6 bg-[#E0EDF5] px-4 laptop:px-8 pt-8 laptop:pt-16 grid-cols-1 laptop:grid-cols-[1fr_.36fr_.36fr_.36fr] items-end mb-4 laptop:mb-5 js-scroll">
+                    <div class="js-scroll h-full w-full"><img class="w-full h-full object-cover"
+                            src="src/assets/images/cancercare/case-management.webp"></div>
+                    <div class="js-scroll h-full w-full"><img class="w-full h-full object-cover"
+                            src="src/assets/images/cancercare/community-programs.webp"></div>
+                    <div class="js-scroll h-full w-full"><img class="w-full h-full object-cover"
+                            src="src/assets/images/cancercare/support-groups.webp"></div>
+                    <div class="js-scroll h-full w-full"><img class="w-full h-full object-cover"
+                            src="src/assets/images/cancercare/blood-cancers.webp"></div>
+                </div>
+                <div class="bg-[#f4f8f9] relative overflow-hidden">
+                    <div class="js-scroll">
+                        <img src="/src/assets/images/cancercare/phones-previews.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMPROVED ICONOGRAPHY -->
+    <div class="bg-[#F6F9FC]">
+        <div class="py-12 laptop:py-[7.5rem] container mx-auto">
+            <div>
+                <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll">Improved Iconography</p>
+                <p class="text-smooth-gray js-scroll text-base laptop:text-xl mb-7 laptop:mb-[3.75rem] max-w-[29.25rem]">
+                    A new Iconography was created to represent most of the activities handled by the CMS.
+                </p>
+                <div class="flex flex-wrap tablet:grid grid-cols-3 tablet:grid-cols-6 gap-x-12 gap-y-4 w-fit">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-1.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-2.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-3.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-4.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-5.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-6.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-7.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-8.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-9.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-10.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-11.svg">
+                    <img class="js-scroll" src="src/assets/images/cancercare/iconography-12.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer bg-[#EBF1F5]">
+        <div id="block" class="container mx-auto">
+            <h1 class="mb-8 font-medium js-scroll text-cancercare-brand-color max-w-[49.6875rem]">
+                There’s a lot more I can do for you. Let’s talk
+            </h1>
+            <div class="schedule">
+                <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                    <button class="normal-case px-4 py-3 text-xl leading-6 whitespace-nowrap js-scroll">
+                        Let’s get started!
+                    </button>
+                </a>
+
+                <div class="portrait rounded-full bg-gray-300 overflow-hidden js-scroll">
+                    <img class="" width="48" height="48" src="/src/assets/images/utils/leonardo-icon.webp"
+                        alt="Leonardo Jimenez">
+                </div>
+                <h5 class="js-scroll">Schedule a<br>call with me</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALPHA EXPRESS -->
+    <div class="alpha-express-bg relative overflow-hidden">
+        <img class="w-full h-full object-cover absolute"
+            src="/src/assets/images/cancercare/page-representation-bg.webp">
+        <div id="block" class=" h-full flex items-center relative z-10 container mx-auto">
+            <div class="study-case justify-between items-center grid">
+                <div class="content">
+                    <p class="next js-scroll">Next case</p>
+                    <h2 class="font-semibold js-scroll">
+                        Alpha Express
+                    </h2>
+                    <p class="js-scroll max-w-[26.0625rem]">
+                        Building the future of wealth management and finances in the DR
+                    </p>
+                    <a href="/cancercare" class="js-scroll">
+                        <button class="font-medium whitespace-nowrap js-scroll">
+                            See case study
+                        </button>
+                    </a>
+                </div>
+                <div class="side-image js-scroll">
+                    <img src="/src/assets/images/cancercare/page-representation.webp"
+                        alt="Alpha Express Page Presentation">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/src/assets/js/slide-up.js" type="module"></script>
+    <script src="/src/assets/js/about-modal.js" type="module"></script>
+    <script src="/src/assets/js/mobile-nav-slide.js" type="module"></script>
+    <script src="/src/assets/js/slideshow.js" type="module"></script>
+</body>
+
 </html>

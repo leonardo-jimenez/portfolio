@@ -1,33 +1,44 @@
 .chocolate {
+  width: 8rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 2rem;
+}
+.search-patterns {
+  display: flex;
+  flex-direction: column;
+  gap: $global-spacing-lg;
+}
+.user-search.text-block {
+  margin-bottom: 0;
+  max-width: none;
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .chocolate {
     width: 14rem;
     position: absolute;
     right: 0;
     bottom: $global-spacing-xl;
-}
-.search-patterns {
+  }
+  .search-patterns {
     display: flex;
     flex-direction: column;
     gap: $global-spacing-lg;
-}
-.user-search.text-block {
-    margin-bottom: 0;
-    max-width: none;
-    height: auto;
-}
-
-@media (min-width: 640px) {
-    .search-patterns {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: $global-spacing-2xl;
-    }
+  }
+  .search-patterns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: $global-spacing-2xl;
+  }
 }
 
 @media (min-width: 1024px) {
-    .chocolate {
-        width: 20rem;
-        position: absolute;
-        right: 0;
-        bottom: calc(3.25 * $global-spacing-2xl);
-    }
+  .chocolate {
+      width: 20rem;
+      position: absolute;
+      right: 0;
+      bottom: 5.75rem;
+  }
 }
