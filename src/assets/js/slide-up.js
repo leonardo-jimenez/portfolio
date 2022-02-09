@@ -45,6 +45,9 @@ window.addEventListener('load', function () {
     window.addEventListener('scroll', () => {
         handleScrollAnimation();
     })
+    window.addEventListener('resize', () => {
+        handleScrollAnimation();
+    })
 
     handleScrollAnimation();
 
