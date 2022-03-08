@@ -3,6 +3,7 @@ window.addEventListener('load', function () {
     const scrollOffset = 0;
     const angledScrollOffset = 175;
     const scrollElements = document.querySelectorAll(".js-scroll");
+    const scrollElementsOnPageLoad = document.querySelectorAll(".js-scroll-on-page-load");
 
     scrollElements.forEach((el) => {
         el.style.opacity = 0;
@@ -15,6 +16,12 @@ window.addEventListener('load', function () {
         } else {
             el.style.transform = 'translateY(75px)';
         }
+    });
+
+    scrollElementsOnPageLoad.forEach((el) => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(75px)';
+        // el.classList.add('js-scroll')
     });
 
     const elementInView = (el, scrollOffset = 0) => {
@@ -30,8 +37,8 @@ window.addEventListener('load', function () {
         );
     };
 
-    const displayScrollElement = (element) => {
-        element.classList.add("scrolled");
+    const displayScrollElement = (el) => {
+        el.classList.add("scrolled");
     };
 
     const handleScrollAnimation = () => {
@@ -42,10 +49,24 @@ window.addEventListener('load', function () {
         })
     }
 
+    const handleOnPageLoadElements = () => {
+        scrollElementsOnPageLoad.forEach((el) => {
+            setTimeout(function () { 
+                el.classList.add("js-scroll"); 
+                el.classList.add("scrolled"); 
+            }, 500);
+        })
+    }
+
     window.addEventListener('scroll', () => {
         handleScrollAnimation();
     })
+    window.addEventListener('resize', () => {
+        handleScrollAnimation();
+    })
 
-    handleScrollAnimation();
+    handleScrollAnimation()
+
+    handleOnPageLoadElements()
 
 })
