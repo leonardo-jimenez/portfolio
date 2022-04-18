@@ -5,9 +5,24 @@
     flex-direction: column;
 
     & h4 { font-size: $text-size-sm; }
+
+    .designed-solutions-grid {
+        img {
+            max-width: 70px;
+            max-height: 24px;
+        }
+    }
     
     @media (min-width: 640px) {
         & h4 { font-size: $text-size-base; }
+
+        .designed-solutions-grid {
+            img {
+                max-width: 117px;
+                max-height: 38px;
+            }
+        }
+
     }
     
     @media (min-width: 1024px) {
