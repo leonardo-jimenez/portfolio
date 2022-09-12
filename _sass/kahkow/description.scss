@@ -23,7 +23,7 @@
     }
     @media (min-width: 1024px) {
         & .image {
-            padding-top: calc(5 * $global-spacing-base);
+            padding-top: calc(5 * #{$global-spacing-base});
         }
     }
 }

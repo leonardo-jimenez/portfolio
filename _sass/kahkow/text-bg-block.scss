@@ -1,6 +1,6 @@
 .kahkow {
     &.bg-block {
-        height: calc(10 * $global-spacing-xl);
+        height: calc(10 * #{$global-spacing-xl});
         box-shadow: 
             $global-spacing-xs
             $global-spacing-xs
@@ -18,7 +18,7 @@
     
     @media (min-width: 1024px) {
         &.bg-block {
-            height: calc(15 * $global-spacing-xl);
+            height: calc(15 * #{$global-spacing-xl});
             box-shadow: 
                 $global-spacing-sm
                 $global-spacing-sm

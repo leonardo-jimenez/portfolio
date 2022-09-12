@@ -45,8 +45,8 @@
             line-height: $text-line-height-lsm;
         }
         & {
-            padding-top: calc(5 * $global-spacing-base);
-            padding-bottom: calc(4 * $global-spacing-base);
+            padding-top: calc(5 * #{$global-spacing-base});
+            padding-bottom: calc(4 * #{$global-spacing-base});
         }
     }
 
