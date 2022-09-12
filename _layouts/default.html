@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/assets/css/fonts.css">
     {% if page.css_group %}
         {% for stylesheet in page.css_group %}
-        <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css">
+        <link rel="stylesheet" href="{{ base.url | prepend: site.url }}/assets/css/{{ stylesheet }}.css">
         {% endfor %}
     {% endif %}
 </head>
