@@ -1,12 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="leos-favicon.jpg" />
     <meta charset="utf-8">
+    {% if page.author %}
+    <meta name="author" content="{{ page.author }}">
+    {% endif %}
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}">
+    {% endif %}
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/fonts.css">
     {% if page.css_group %}
         {% for stylesheet in page.css_group %}
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+        <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css">
         {% endfor %}
     {% endif %}
 </head>
