@@ -38,6 +38,9 @@ sass:
   sass_dir: _sass
   style: compressed
 
+assets:
+  css_compressor: nil
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
