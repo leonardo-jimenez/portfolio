@@ -1,6 +1,9 @@
 .sc-description {
-    padding-top: $global-spacing-2xl;
     padding-bottom: $global-spacing-xl;
+
+    .text-green {
+        color: #65A53A;
+    }
 
     & h3{
         font-size: $text-size-sm;
@@ -36,6 +39,7 @@
 
 
     @media (min-width: 1024px) {
+        padding-top: $global-spacing-2xl;
         & h3{
             font-size: $text-size-lsm;
             line-height: $text-line-height-lsm;

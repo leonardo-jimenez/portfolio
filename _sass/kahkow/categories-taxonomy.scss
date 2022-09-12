@@ -10,6 +10,10 @@
 
   .gradient-background {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.74%, #FFFFFF 61.79%);
+    bottom: -9rem;
+    @media (min-width: 768px) {
+      bottom: -7.5rem;
+    }
   }
 
 }

@@ -1,5 +1,9 @@
 @media (min-width: 1024px) {
 
+  img {
+    filter: drop-shadow(12px -4px 25px rgba(0, 0, 0, 0.08));
+  }
+
   .better-heroes-text {
     flex: 0 0 24rem;
   }
@@ -11,7 +15,7 @@
 
     div{
       img:first-child {
-        left: -13rem;
+        left: -21rem;
       }
     }
   }

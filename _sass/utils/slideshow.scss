@@ -32,7 +32,7 @@
     .current-icon {
         display: none;
     }
-    
+
     &.current {
         background-color: $color-soft-blue;
 
@@ -49,4 +49,8 @@
         }
 
     }
+}
+
+#slideshow-nav-container {
+    flex: 0 0 auto;
 }
