@@ -13,6 +13,10 @@
         max-width: 1200px;
         
     }
+
+    .about-wrapper {
+        flex: 0 0 28.875rem
+    }
 }
 
 .modal-background {
@@ -23,7 +27,7 @@
     top: 0;
     display: none;
     overflow: hidden scroll;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
 
 }
