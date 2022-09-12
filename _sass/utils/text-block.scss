@@ -1,0 +1,33 @@
+.text-block {
+    margin-bottom: calc(3.125 * #{$global-spacing-base});
+    
+    & h2 {
+        font-size: $text-size-base;
+        line-height: $text-line-height-base;
+        margin-bottom: $global-spacing-base;
+    }
+    & p {
+        font-size: $text-size-sm;
+        line-height: $text-line-height-sm;
+        color: $color-low-gray;
+    }
+    
+    @media (min-width: 640px) {
+        & { max-width: 50%; }
+    }
+    
+    @media (min-width: 1024px)  {
+        & h2 {
+            font-size: $text-size-xl;
+            margin-bottom: $global-spacing-md;
+            line-height: calc(3.625 * #{$global-spacing-base});
+        }
+        & p {
+            font-size: $text-size-base;
+            line-height: $text-line-height-base;
+        }
+        & {
+            margin-bottom: calc(4 * #{$global-spacing-base});
+        }
+    }
+}

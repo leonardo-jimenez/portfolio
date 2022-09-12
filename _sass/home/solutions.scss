@@ -1,0 +1,36 @@
+.solutions {
+  padding-top: $global-spacing-lg;
+  padding-bottom: $global-spacing-lg;
+  gap: $global-spacing-md;
+  flex-direction: column;
+
+  & h4 { font-size: $text-size-sm; }
+
+  .designed-solutions-grid {
+    img {
+      max-width: 70px;
+      max-height: 24px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    & h4 { font-size: $text-size-base; }
+
+    .designed-solutions-grid {
+      img {
+        max-width: 117px;
+        max-height: 38px;
+      }
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      padding-top: $global-spacing-2xl;
+      padding-bottom: $global-spacing-2xl;
+      flex-direction: row;
+      gap: 0rem;
+    }
+  }
+}

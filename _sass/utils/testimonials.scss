@@ -1,0 +1,39 @@
+.testimonial {
+    & p {
+        color: $color-dark-blue;
+        font-size: $text-size-base;
+        line-height: $text-line-height-md;
+    }
+    & h5 {
+        font-size: $text-size-xs;
+        color: $color-smooth-gray;
+        text-transform: uppercase;
+    }
+    & .portrait {
+        width: calc(3.75 * #{$global-spacing-base});
+        height: calc(3.75 * #{$global-spacing-base});
+        margin-bottom: $global-spacing-base;
+    }
+    
+    @media (min-width: 640px) {
+        & .portrait {
+            width: calc(5 * #{$global-spacing-base});
+            height: calc(5 * #{$global-spacing-base});
+            margin-bottom: $global-spacing-lg;
+        }
+        & p {
+            font-size: $text-size-lg;
+            line-height: calc(2.4 * #{$global-spacing-base});
+        }
+        & h5 {
+            font-size: $text-size-sm;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        &#block {
+            padding-left: calc(12 * #{$global-spacing-base});
+            padding-right: calc(12 * #{$global-spacing-base});
+        }
+    }
+}

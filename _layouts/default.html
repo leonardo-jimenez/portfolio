@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    {% if page.css_group %}
+        {% for stylesheet in page.css_group %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+        {% endfor %}
+    {% endif %}
+</head>
+<body>
+{{ content }}
+<script src="{{ base.url | prepend: site.url }}/assets/js/about-modal.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/slide-up.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/mobile-nav-slide.js"></script>
+</body>
+</html>
