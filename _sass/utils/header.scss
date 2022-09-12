@@ -109,26 +109,28 @@
         animation-name: closeMobileNavbar;
         animation-duration: 1s;
 
-        &.open {
-            transition: height .75s, opacity 0s;
-            height: 100vh;
-            opacity: 1;
+        @media screen and (max-width: 1024px) {
+            &.open {
+                transition: height .75s, opacity 0s;
+                height: 100vh;
+                opacity: 1;
 
-            .project-image  {
-                animation: openedToClosedNavBar 1s forwards;
-            }
+                .project-image  {
+                    animation: openedToClosedNavBar 1s forwards;
+                }
 
 
-            .mobile-about > *  {
-                animation: openedToClosedNavBar 1s forwards;
-            }
+                .mobile-about > *  {
+                    animation: openedToClosedNavBar 1s forwards;
+                }
 
-            .project-name {
-                animation: openedToClosedNavBar-name 1s forwards;
-            }
-            
-            .project-description {
-                animation: openedToClosedNavBar-description 1s forwards;
+                .project-name {
+                    animation: openedToClosedNavBar-name 1s forwards;
+                }
+
+                .project-description {
+                    animation: openedToClosedNavBar-description 1s forwards;
+                }
             }
         }
     }
