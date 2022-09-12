@@ -1,0 +1,8 @@
+@media (min-width: 1024px) {
+  .row_2 {
+    grid-template-columns: 39% auto
+  }
+  .row_3 {
+    grid-template-columns: 1fr .36fr .36fr .36fr
+  }
+}

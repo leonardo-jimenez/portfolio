@@ -1,0 +1,18 @@
+@media (min-width: 1024px) {
+
+  .better-heroes-text {
+    flex: 0 0 24rem;
+  }
+
+  .better-heroes-container {
+    img:nth-of-type(2) {
+      margin-left: -12.5rem;
+    }
+
+    div{
+      img:first-child {
+        left: -13rem;
+      }
+    }
+  }
+}

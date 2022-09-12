@@ -1,3 +1,7 @@
+#slideshow-dots-container {
+    width: fit-content;
+}
+
 .slide {
     transition: opacity 1s;
     grid-column: 1 / 1;
@@ -16,6 +20,7 @@
     background-color: #B1D1E7;
     border-radius: 50%;
     transition: background-color 1s;
+    cursor: pointer;
 
     &.current {
         background-color: #3B8BC3;
