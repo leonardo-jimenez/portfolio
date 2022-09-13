@@ -10,6 +10,13 @@ mobileNavCloseButton.addEventListener("click", function () {
     toggleMobileNav()
 });
 
+window.addEventListener('resize', function(event) {
+    if (mobileNavContainer.classList.contains('open') && screen.width >= 1024) {
+        document.body.style.overflow = 'auto'
+        mobileNavContainer.classList.remove('open')
+    }
+}, true);
+
 function toggleMobileNav() {
         if (mobileNavContainer.classList.contains('open')) {
             mobileNavContainer.classList.remove('open')

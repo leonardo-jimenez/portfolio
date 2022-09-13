@@ -21,7 +21,7 @@
     <!-- HEADER -->
     <div id="header-container" class="sticky top-0 z-20 bg-white border-b-2 border-gray-300 header cancercare-header">
         <!-- About content container -->
-        <div id="modal-background" class="header z-30 relative modal-background">
+        <div id="modal-background" class="z-30 relative modal-background">
             <div id="about-modal" onclick="event.stopPropagation()"
                 class="about-container container mx-auto bg-white absolute left-2/4 -translate-x-1/2">
                 <div class="flex flex-nowrap bg-white">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="bg-[#F7F8FA] py-9 px-14 flex gap-8 mt-auto">
                             <a class="px-4 py-3 text-xl leading-6 text-white bg-cancercare-brand-color font-normal"
-                                href="https://calendly.com/leonardo-a-jimenez/45min">
+                                href="https://calendly.com/leonardo-a-jimenez/45min" target="_blank">
                                 Let’s get started!
                             </a>
                             <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
@@ -155,16 +155,18 @@
                         I’m more talkative on desktop and tablets. If you’d like to discuss a potential idea or know
                         about me and my work, don’t hesitate to contact me.
                     </p>
-                    <div class="flex gap-6 mt-auto justify-start ">
+                    <div class="flex flex-wrap gap-6 mt-auto justify-start ">
                         <a class="px-4 py-3 text-xl leading-6 text-white bg-cancercare-brand-color font-normal"
-                            href="https://calendly.com/leonardo-a-jimenez/45min">
+                            href="https://calendly.com/leonardo-a-jimenez/45min" target="_blank">
                             Let’s get started!
                         </a>
-                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
-                            <img width="48" height="48" src="src/assets/images/utils/leonardo-icon.webp"
-                                alt="Leonardo Jimenez">
+                        <div class="flex flex-wrap gap-6 mt-auto justify-start ">
+                            <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                                <img width="48" height="48" src="src/assets/images/utils/leonardo-icon.webp"
+                                    alt="Leonardo Jimenez">
+                            </div>
+                            <h5 class="text-cancercare-brand-color">Schedule a<br>call with me</h5>
                         </div>
-                        <h5 class="text-cancercare-brand-color">Schedule a<br>call with me</h5>
                     </div>
                 </div>
             </div>
@@ -227,14 +229,14 @@
                             alt="Leonardo Jimenez">
                     </div>
                     <h5 class="text-cancercare-brand-color">Schedule a<br>call with me</h5>
-                    <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                    <a href="https://calendly.com/leonardo-a-jimenez/45min" target="_blank">
                         <button class="capitalize px-4 py-3 text-xl leading-6 bg-cancercare-brand-color">
                             Let’s get started!
                         </button>
                     </a>
                 </div>
             </div>
-            <img id="mobile-nav-open-toggle" class="only-mobile" src="src/assets/images/icons/menu.svg">
+            <img id="mobile-nav-open-toggle" class="only-mobile cursor-pointer" src="src/assets/images/icons/menu.svg">
         </div>
     </div>
 
@@ -510,7 +512,7 @@
                         offering clearer information.
                     </p>
                 </div>
-                <div class="flex-grow laptop:pt-[6.25rem]">
+                <div class="flex-grow laptop:pt-[6.25rem] better-heroes-container">
                     <img class="js-scroll mb-4 laptop:mb-0" src="src/assets/images/cancercare/better-heroes-1.webp">
                     <img class="laptop:-mt-8 laptop:-ml-[12.5rem] mb-4 laptop:mb-0 js-scroll"
                         src="src/assets/images/cancercare/better-heroes-2.webp">
@@ -528,7 +530,7 @@
     <!-- WEBSITE -->
     <div class="py-12 laptop:pt-[7.5rem] laptop:pb-[8.4375rem]">
         <div class="container mx-auto">
-            <div class="mb-14 laptop:mb-28">
+            <div class="mb-14 laptop:mb-28 website-container">
                 <p class="mb-4 text-cancercare-brand-color text-2xl laptop:text-5xl js-scroll js-scroll">Website</p>
                 <p
                     class="text-smooth-gray js-scroll text-base laptop:text-xl mb-9 laptop:mb-[5.5rem] max-w-[29.25rem] js-scroll">
@@ -541,7 +543,7 @@
                         <img class="js-scroll" src="src/assets/images/cancercare/website-2.webp">
                     </div>
                 </div>
-                <div class="grid grid-cols-1 laptop:grid-cols-[39%_auto] gap-6 items-end">
+                <div class="grid grid-cols-1 laptop:grid-cols-[40.6%_auto] gap-6 items-end">
                     <img class="js-scroll" src="src/assets/images/cancercare/website-3.webp">
                     <img class="js-scroll" src="src/assets/images/cancercare/website-4.webp">
                 </div>
@@ -603,7 +605,7 @@
                 There’s a lot more I can do for you. Let’s talk
             </h1>
             <div class="schedule">
-                <a href="https://calendly.com/leonardo-a-jimenez/45min">
+                <a href="https://calendly.com/leonardo-a-jimenez/45min" target="_blank">
                     <button class="normal-case px-4 py-3 text-xl leading-6 whitespace-nowrap js-scroll">
                         Let’s get started!
                     </button>
@@ -632,7 +634,7 @@
                     <p class="js-scroll max-w-[26.0625rem]">
                         Building the future of wealth management and finances in the DR
                     </p>
-                    <a href="/cancercare.html" class="js-scroll">
+                    <a href="./alpha-express.html" class="js-scroll">
                         <button class="font-medium whitespace-nowrap js-scroll">
                             See case study
                         </button>
