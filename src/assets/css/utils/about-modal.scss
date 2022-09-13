@@ -23,9 +23,8 @@
     top: 0;
     display: none;
     overflow: hidden scroll;
-    padding: 0 1rem;
+    padding: 1rem;
     align-items: center;
-
 }
 
 .modal-background.open-modal {
@@ -35,4 +34,9 @@
         display: flex;
     }
 
+}
+
+#about-modal {
+    margin-top: auto;
+    margin-bottom: auto;
 }
