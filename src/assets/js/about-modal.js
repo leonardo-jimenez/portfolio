@@ -4,6 +4,13 @@ const aboutModal = document.getElementById('about-modal')
 const aboutModalCloseButton = document.getElementById('about-modal-close-button')
 const modalBackground = document.getElementById('modal-background')
 
+window.addEventListener('resize', function(event) {
+    if (modalBackground.classList.contains('open-modal') && screen.width < 1024) {
+        document.body.style.overflow = 'auto'
+        modalBackground.classList.remove('open-modal')
+    }
+}, true);
+
 aboutButton.addEventListener("click", function () {
     toggleModal()
 });
